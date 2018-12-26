@@ -253,8 +253,7 @@
 
 
 
-
-   <ul class="nav nav-list" id="nav-placeholder">
+ <ul class="nav nav-list" id="nav-placeholder">
       
 
     </ul><!-- /.nav-list -->
@@ -293,237 +292,1055 @@
 </div><div class="page-content">
     <div class="page-header">
         <h1>
-            Complain Management
+            Complain List
             <small>
                 <i class="icon-double-angle-right"></i>
-                Complain
+               Complain List
             </small>
-
-
+            <i class="icon-spinner icon-spin orange bigger-125 hide"></i>
         </h1>
     </div><!-- /.page-header -->
 
+    
 
     <div class="row">
-        <div class="col-xs-12">
+        <div class="col-xs-12 col-sm-12">
+
             <!-- PAGE CONTENT BEGINS -->
-            <form action="https://#/Complain/command" class="form-horizontal form-validate" id="register-form" role="form" method="post" accept-charset="utf-8" novalidate="novalidate">
-            <input type="hidden" name="id" id="id" value="">
-
-
-            <div class="space-2"></div>
-                        <!--<div class="form-group">
-            <label class="control-label col-xs-12 col-sm-3 no-padding-right" for="password">Markaz Name:</label>
-            <div class="col-xs-12 col-sm-9">
-            <div class="clearfix">
-
-            
-            </div>
-            </div>
-            </div>
-            <div class="space-2"></div>-->
-            
-            <!--  <div class="form-group  ">
-                <label class="control-label col-xs-12 col-sm-3 no-padding-right" for="password">Mobile No:</label>
-                <div class="col-xs-12 col-sm-9">
-                    <div class="clearfix">
-                        <input type="text" id="mobile_no" value="" name="mobile_no" placeholder="12345678901" class="col-xs-12 col-sm-6 required-field" />
-                    </div>
-                                       </div>
-            </div>
-            <div class="space-2"></div> -->
-            <div class="form-group">
-                <label class="control-label col-xs-12 col-sm-3 no-padding-right" for="form-field-1"> Mobile No: </label>
-
-                <div class="col-xs-12 col-sm-9">
-                    <div class="clearfix">
-                        <div class="intl-tel-input allow-dropdown separate-dial-code iti-sdc-3"><div class="flag-container"><div class="selected-flag" tabindex="0" title="Pakistan (‫پاکستان‬‎): +92"><div class="iti-flag pk"></div><div class="selected-dial-code">+92</div><div class="iti-arrow"></div></div><ul class="country-list hide"><li class="country active" data-dial-code="92" data-country-code="pk"><div class="flag-box"><div class="iti-flag pk"></div></div><span class="country-name">Pakistan (‫پاکستان‬‎)</span><span class="dial-code">+92</span></li></ul></div><input type="tel" placeholder="301 2345678" id="mobile_no" value=" " name="mobile_no" autocomplete="off" class="valid error"></div>
-                        <input id="get_number" type="hidden" name="get_number" value="+92 ">
-                        <!-- <input type="hidden" id="country_code" /> -->
-                        <span id="valid-msg" style="color:#2c7659;font-size: 15px;" class="hide">✓  Valid</span>
-                        <span id="error-msg" style="color: #953b39;font-size: 15px;" class="">✗ Invalid number</span>
-                    </div>
-
-                    <font color="red"></font>
-                </div>
-            </div>
-
+            <form action="https://#/Complain/payment_action" class="form-horizontal form-validate-distribution" id="register-form" role="form" method="post" accept-charset="utf-8" novalidate="novalidate">
 
             <div class="form-group has-info">
-                <label class="control-label col-xs-12 col-sm-3 no-padding-right" for="password">Name:</label>
-                <div class="col-xs-12 col-sm-9">
-                    <div class="clearfix">
-                        <input type="text" old-username="" id="username" value=" " name="name" placeholder="User name" class="col-xs-12 col-sm-6 required-field valid">
-                    </div>
-                                    </div>
-            </div>
-            <div class="space-2"></div>
-
-            <div class="form-group has-info">
-                <label class="control-label col-xs-12 col-sm-3 no-padding-right" for="password">Customer Id</label>
-                <div class="col-xs-12 col-sm-9">
-                    <div class="clearfix">
-                        <input type="text" id="slip_no" value=" " name="slip_no" placeholder="Slip No." class="col-xs-12 col-sm-6 required-field valid">
+                <label class="control-label col-xs-12 col-sm-2 no-padding-right" for="CNIC">Search:</label>
+                <div class="col-xs-12 col-sm-6">
+                    <div class="input-group">
+                        <input class="form-control valid" type="text" maxlength="50" id="search_complain_input" name="search_complain_input" placeholder="BY: Customer Name/Cell No/Cust Code" tabindex="1" value="923412345893">
+                        <span class="input-group-btn">
+                            <button class="search_complain_customer btn btn-sm btn-default" type="button">
+                                <i class="icon-search bigger-110"></i>Search</button>
+                        </span>
                     </div>
                 </div>
-            </div>
-            <div class="space-2"></div>
-
-            
-            <div class="space-2"></div>
-
-
-            <div class="form-group has-info">
-                <label class="control-label col-xs-12 col-sm-3 no-padding-right" for="password">City:</label>
-                <div class="col-xs-12 col-sm-9">
-                    <div class="clearfix">
-                        <input type="text" id="city_name" value=" " name="city_name" placeholder="City" class="col-xs-12 col-sm-6 required-field valid">
-                    </div>
-                                    </div>
-            </div>
-          <div class="form-group has-info">
-                <label class="control-label col-xs-12 col-sm-3 no-padding-right" for="password">Department:</label>
-                <div class="col-xs-12 col-sm-9">
-                    <div class="clearfix">
-                        <select name="complain_status" id="" class="col-xs-12 col-sm-6 required-field valid" placeholder="Select Complain Status">
-                            <option value=""></option>
-                            <option value="XYZ" selected="selected">
-XYZ
-                            </option>
-                            <option value="ABC">
-PQR
-                            </option>
-                            <option value="PQR">
-                                ABC
-                            </option>
-                        </select>
-                    </div>
-                </div>
-            </div>
-            <div class="form-group has-info">
-                <label class="control-label col-xs-12 col-sm-3 no-padding-right" for="password">Time Needed:</label>
-                <div class="col-xs-12 col-sm-9">
-                    <div class="clearfix">
-                        <select name="complain_status" id="" class="col-xs-12 col-sm-6 required-field valid" placeholder="Select Complain Status">
-                            <option value=""></option>
-                            <option value="Mahnama XYZ" selected="selected">
-                                Select Duration 
-                            </option>
-                            <option value="ABC">
-                                3 Working Days
-                            </option>
-                            <option value="ABC">
-                                5 Working Days
-                            </option>
-                            <option value="PQR">
-                                7 Working Days
-                            </option>
-                        </select>
-                    </div>
-                </div>
-            </div>
-           <div class="form-group">
-
-                <label class="control-label col-xs-12 col-sm-3 no-padding-right" for="Country">
-                    Category:
-                </label>
-                <div class="col-xs-12 col-sm-9" style="padding: 5px;">
-                    <div class="clearfix">
-                        <select required="" multiple="" id="category_id" name="category_id[]" class="width-48 chosen-select" placeholder="Category" style="display: none;">
-                            <option value="1">Mahnama (Aam - Black &amp; White Copy) Rs.35 per unit </option><option value="2">Mahnama (Khas - Color Copy) Rs.60 per unit</option><option value="3">ENGLISH MAHNAMA </option>                        </select><div class="chosen-container chosen-container-multi" style="width: 440px;" title="" id="category_id_chosen"><ul class="chosen-choices"><li class="search-choice"><span>Fresh</span><a class="search-choice-close" data-option-array-index="1"></a></li></ul><div class="chosen-drop"><ul class="chosen-results"><li class="result-selected" style="" data-option-array-index="0">Mahnama (Aam - Black &amp; White Copy) Rs.35 per unit </li><li class="result-selected" style="" data-option-array-index="1">Mahnama (Khas - Color Copy) Rs.60 per unit</li><li class="active-result" style="" data-option-array-index="2">ENGLISH MAHNAMA </li></ul></div></div>
-                    </div>
-                    <font color="red"></font>
-                </div>
-            </div>
-            <div class="space-2"></div>
-
-            <div class="space-2"></div>
-
-            <div class="form-group">
-                <label class="control-label col-xs-12 col-sm-3 no-padding-right" for="password">Description:</label>
-                <div class="col-xs-12 col-sm-9">
-                    <div class="clearfix">
-                        <textarea cols="52" rows="10" placeholder="Description" name="description" class="required-field" style="width: 436px; height: 87px;">
-                                                                        
-                                                                        
-                                                                        
-                                                                        
-                                                                        
-                                                                        
-                                                                        
-                                                                        
-                                                                        
-                                                                        
-                                                                        
-                                                                        
-                                                              </textarea>
-                    </div>
-                </div>
-            </div>
-            <div class="space-2"></div>
-
-            
-            <div class="space-2"></div>
-
-            <div class="form-group has-info">
-                <label class="control-label col-xs-12 col-sm-3 no-padding-right" for="password">Complain Status:</label>
-                <div class="col-xs-12 col-sm-9">
-                    <div class="clearfix">
-                        <select name="complain_status" id="" class="col-xs-12 col-sm-6 required-field valid" placeholder="Select Complain Status">
-                            <option value=""></option>
-                            <option value="New" selected="selected">
-                                New
-                            </option>
-                            <option value="Resolved">
-                                Resolved
-                            </option>
-                            <option value="Untraceable">
-                                Un-traceable
-                            </option>
-                        </select>
-                    </div>
-                </div>
-            </div>
-            <div class="space-2"></div>
-
-
-            <div class="clearfix form-actions">
-                <div class="col-md-offset-6 col-md-9">
-                    <button class="btn btn-info btn-validate btn_submit_complain" type="submit" disabled="disabled">
-                        <i class="icon-ok bigger-110"></i>
-                        Submit
-                    </button>
-
-                    <!--         &nbsp; &nbsp; &nbsp;
-                    <button class="btn" type="reset">
-                    <i class="icon-undo bigger-110"></i>
-                    Reset
-                    </button>-->
+                <div class="col-xs-12 col-sm-4">
+                    <a href="https://#/Complain/add_complain" class="pull-right btn bigger-50 ws-btn-font  btn-success" style="float: left !important;">Add New Complain </a>
                 </div>
             </div>
 
 
-            </form>            <!-- PAGE CONTENT ENDS -->
+
+
+            </form>
+            <br>
+            <form action="https://#/Form/payment_submit" class="form-horizontal form-validate-distribution" id="register-form" role="form" method="post" accept-charset="utf-8" novalidate="novalidate">
+            <div class="complain_result"><!-- Array
+(
+    [0] => stdClass Object
+        (
+            [id] => 4648
+            [customer_code] => 104648
+            [profile_id] => 4390
+            [profile_code] => 104390
+            [category_id] => 2
+            [dis_channel_id] => 2
+            [department_id] => 1
+            [tanzimi_zimadari] => 
+            [login_id] => 4890
+            [name] => KAMRAN ATTARI
+            [email] => 
+            [postal_address] => HOUSE#B-320, SECTOR 51/B, KORANGI#6, KARACHI
+            [shipping_address] => HOUSE#B-320, SECTOR 51/B, KORANGI#6, KARACHI
+            [courier] => 
+            [mobile_no] => 923412345893
+            [landline_no] => 
+            [country_id] => 166
+            [state_id] => 2729
+            [city_id] => 31594
+            [area_id] => 264
+            [kabinat_id] => 0
+            [kabina_id] => 0
+            [frequency_id] => 12
+            [shop_id] => 
+            [month_id] => 0
+            [year_id] => 0
+            [noofcopy] => 1
+            [r_noofcopy] => 1
+            [payment_status] => 1
+            [payment_type] => cash
+            [payment_date] => 2017-01-30
+            [receipt_no] => 30401
+            [amount] => 720
+            [shipping] => 380
+            [currency_id] => 1
+            [last_product_id] => 27
+            [total_quantity] => 12
+            [dispatch_quantity] => 12
+            [user_type_title] => 
+            [ajeer_code] => 
+            [order_key] => 
+            [created_date] => 2017-01-30 15:49:54
+            [created_by] => 2738
+            [modify_date] => 2017-12-22 15:40:09
+            [modify_by] => 1
+            [is_enable] => 1
+            [inactive_date] => 
+            [inactive_by] => 0
+            [inactive_reason] => 
+            [temp_copies] => 0
+        )
+
+)
+ -->
+        <div class="row">
+            <div class="col-xs-12">
+                <!-- PAGE CONTENT BEGINS -->
+
+
+
+                <div class="table-header">
+                    Results for Customer
+                    <!-- <a href="" class="pull-right btn bigger-50 ws-btn-font  btn-success">Add New </a> -->
+                </div>
+
+                <div class="table-responsive sample-table-2">
+                    <table id="" class="table table-striped table-bordered table-hover">
+                        <thead>
+                        <tr>
+                            <th>Cust ID</th>
+                            <th>Cust Code</th>
+                            <th>Cust Type</th>
+                            <th>Phone No</th>
+                            <th>Registration Date</th>
+                            <th>Name</th>
+                            <th>Postal Address</th>
+                            <th>Category</th>
+                            <th>No. of Copies</th>
+                            <th>Total Amount</th>
+                            <th>Payment Type</th>
+                            <th>Payment Status</th>
+                            <th>Status</th>
+                            <th>Complain</th>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                                                    <tr>
+                            	<td>4648</td>
+                                <td>104648</td>
+                                <td>Manual</td>
+                                <td>923412345893</td>
+                                <td>2017-01-30 15:49:54</td>
+                                <td>KAMRAN ATTARI</td>
+                                <td>HOUSE#B-320, SECTOR 51/B, KORANGI#6, KARACHI</td>
+                                <td>Mahnama (Khas - Color Copy) Rs.60 per unit                                </td>
+                                <td>1</td>
+                                <td>Rs. 1100 </td>
+                                <td><span class="btn btn-warning btn-sm tooltip-warning" title="Cash" style="padding:0px 10px;">Cash</span>                                </td>
+                                <td>
+                                    <span class="btn btn-success btn-sm" style="padding:0px 10px;" title="Received">Received</span>                                </td>   
+
+
+                                <td>
+                                    <label class=" inline">
+                                    <input ref="" value="1" checked="checked" type="checkbox" class="ace ace-switch ace-switch-5 status" disabled="disabled">
+                                    <span class="lbl"></span>
+                                    </label>
+                                    </td>
+                                <td>
+                                     <span href="javascript:alert('Hello World!');" class="btn btn btn-danger" style="padding:0px 10px;" >New</span> 
+                                </td>
+
+
+                            </tr>
+
+                                                </tbody>
+
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <br><br><br><br>
+
+<!--        Customer Distributions table -->
+    <!-- Array
+(
+    [0] => stdClass Object
+        (
+            [id] => 1327
+            [trans_code] => 2017020017
+            [trans_date] => 2017-02-06
+            [product_id] => 3
+            [location_id] => 1
+            [territory_id] => 
+            [customer_id] => 4648
+            [delivery_date] => 2017-02-16 00:00:00
+            [rec_mobile] => 
+            [recieved_by] => ZAIN
+            [delivery_state_no] => OK
+            [quantity] => 1
+            [dispatch_status] => 1
+            [consignment_no] => 801014289933
+            [courier] => tcs
+            [rider_id] => 0
+            [is_allocate] => 0
+            [is_delivered] => 1
+            [dist_point_id] => 0
+            [status] => 1
+            [created_date] => 2017-02-06 22:34:02
+            [created_by] => 1
+            [modify_date] => 2018-02-03 19:06:29
+            [modify_by] => 1
+            [is_enable] => 1
+            [prv_dispatch_status] => 1
+        )
+
+    [1] => stdClass Object
+        (
+            [id] => 13993
+            [trans_code] => 2017020115
+            [trans_date] => 2017-02-28
+            [product_id] => 6
+            [location_id] => 1
+            [territory_id] => 
+            [customer_id] => 4648
+            [delivery_date] => 
+            [rec_mobile] => 
+            [recieved_by] => 
+            [delivery_state_no] => 
+            [quantity] => 1
+            [dispatch_status] => 1
+            [consignment_no] => 801014306602
+            [courier] => tcs
+            [rider_id] => 0
+            [is_allocate] => 0
+            [is_delivered] => 1
+            [dist_point_id] => 0
+            [status] => 1
+            [created_date] => 2017-02-28 22:45:19
+            [created_by] => 1
+            [modify_date] => 2017-05-16 14:47:49
+            [modify_by] => 1
+            [is_enable] => 1
+            [prv_dispatch_status] => 1
+        )
+
+    [2] => stdClass Object
+        (
+            [id] => 32281
+            [trans_code] => 2017030269
+            [trans_date] => 2017-03-26
+            [product_id] => 9
+            [location_id] => 1
+            [territory_id] => 
+            [customer_id] => 4648
+            [delivery_date] => 
+            [rec_mobile] => 
+            [recieved_by] => 
+            [delivery_state_no] => 
+            [quantity] => 1
+            [dispatch_status] => 1
+            [consignment_no] => 201405751765
+            [courier] => ocs
+            [rider_id] => 0
+            [is_allocate] => 0
+            [is_delivered] => 1
+            [dist_point_id] => 0
+            [status] => 1
+            [created_date] => 2017-03-26 15:57:07
+            [created_by] => 1
+            [modify_date] => 2017-04-03 21:04:22
+            [modify_by] => 1
+            [is_enable] => 1
+            [prv_dispatch_status] => 1
+        )
+
+    [3] => stdClass Object
+        (
+            [id] => 54217
+            [trans_code] => 2017040432
+            [trans_date] => 2017-04-26
+            [product_id] => 11
+            [location_id] => 1
+            [territory_id] => 
+            [customer_id] => 4648
+            [delivery_date] => 
+            [rec_mobile] => 
+            [recieved_by] => 
+            [delivery_state_no] => 
+            [quantity] => 1
+            [dispatch_status] => 1
+            [consignment_no] => 
+            [courier] => 
+            [rider_id] => 0
+            [is_allocate] => 0
+            [is_delivered] => 1
+            [dist_point_id] => 0
+            [status] => 1
+            [created_date] => 2017-04-26 19:41:12
+            [created_by] => 1
+            [modify_date] => 2017-04-27 22:27:48
+            [modify_by] => 1
+            [is_enable] => 1
+            [prv_dispatch_status] => 1
+        )
+
+    [4] => stdClass Object
+        (
+            [id] => 78206
+            [trans_code] => 2017050737
+            [trans_date] => 2017-05-25
+            [product_id] => 13
+            [location_id] => 1
+            [territory_id] => 
+            [customer_id] => 4648
+            [delivery_date] => 
+            [rec_mobile] => 
+            [recieved_by] => 
+            [delivery_state_no] => 
+            [quantity] => 1
+            [dispatch_status] => 1
+            [consignment_no] => 
+            [courier] => fcs
+            [rider_id] => 19962
+            [is_allocate] => 1
+            [is_delivered] => 1
+            [dist_point_id] => 4
+            [status] => 1
+            [created_date] => 2017-05-25 09:48:51
+            [created_by] => 1
+            [modify_date] => 2017-06-01 16:34:34
+            [modify_by] => 1
+            [is_enable] => 1
+            [prv_dispatch_status] => 0
+        )
+
+    [5] => stdClass Object
+        (
+            [id] => 87142
+            [trans_code] => 2017060929
+            [trans_date] => 2017-06-17
+            [product_id] => 15
+            [location_id] => 1
+            [territory_id] => 
+            [customer_id] => 4648
+            [delivery_date] => 
+            [rec_mobile] => 
+            [recieved_by] => 
+            [delivery_state_no] => 
+            [quantity] => 1
+            [dispatch_status] => 1
+            [consignment_no] => 
+            [courier] => fcs
+            [rider_id] => 19962
+            [is_allocate] => 1
+            [is_delivered] => 1
+            [dist_point_id] => 4
+            [status] => 1
+            [created_date] => 2017-06-17 12:26:14
+            [created_by] => 1
+            [modify_date] => 2017-07-03 10:35:06
+            [modify_by] => 1
+            [is_enable] => 1
+            [prv_dispatch_status] => 0
+        )
+
+    [6] => stdClass Object
+        (
+            [id] => 111793
+            [trans_code] => 2017071205
+            [trans_date] => 2017-07-23
+            [product_id] => 17
+            [location_id] => 1
+            [territory_id] => 
+            [customer_id] => 4648
+            [delivery_date] => 2017-07-31 00:00:00
+            [rec_mobile] => 
+            [recieved_by] => KAMRAN
+            [delivery_state_no] => RECEIVED
+            [quantity] => 1
+            [dispatch_status] => 1
+            [consignment_no] => 
+            [courier] => fcs
+            [rider_id] => 19962
+            [is_allocate] => 1
+            [is_delivered] => 1
+            [dist_point_id] => 4
+            [status] => 1
+            [created_date] => 2017-07-23 14:01:31
+            [created_by] => 1
+            [modify_date] => 2017-11-02 12:33:10
+            [modify_by] => 1
+            [is_enable] => 1
+            [prv_dispatch_status] => 0
+        )
+
+    [7] => stdClass Object
+        (
+            [id] => 129747
+            [trans_code] => 2017081461
+            [trans_date] => 2017-08-21
+            [product_id] => 19
+            [location_id] => 1
+            [territory_id] => 
+            [customer_id] => 4648
+            [delivery_date] => 1970-01-01 00:00:00
+            [rec_mobile] => 
+            [recieved_by] => KAMRAN
+            [delivery_state_no] => RECEIVED
+            [quantity] => 1
+            [dispatch_status] => 1
+            [consignment_no] => 
+            [courier] => fcs
+            [rider_id] => 19962
+            [is_allocate] => 1
+            [is_delivered] => 1
+            [dist_point_id] => 4
+            [status] => 1
+            [created_date] => 2017-08-21 10:10:18
+            [created_by] => 1
+            [modify_date] => 2018-02-01 10:39:51
+            [modify_by] => 1
+            [is_enable] => 1
+            [prv_dispatch_status] => 0
+        )
+
+    [8] => stdClass Object
+        (
+            [id] => 147134
+            [trans_code] => 2017091766
+            [trans_date] => 2017-09-19
+            [product_id] => 21
+            [location_id] => 1
+            [territory_id] => 
+            [customer_id] => 4648
+            [delivery_date] => 2017-09-22 00:00:00
+            [rec_mobile] => 
+            [recieved_by] => KAMRAN
+            [delivery_state_no] => RECEIVED
+            [quantity] => 1
+            [dispatch_status] => 1
+            [consignment_no] => 
+            [courier] => fcs
+            [rider_id] => 19962
+            [is_allocate] => 1
+            [is_delivered] => 1
+            [dist_point_id] => 4
+            [status] => 1
+            [created_date] => 2017-09-19 15:13:32
+            [created_by] => 1
+            [modify_date] => 2018-02-01 10:49:34
+            [modify_by] => 1
+            [is_enable] => 1
+            [prv_dispatch_status] => 0
+        )
+
+    [9] => stdClass Object
+        (
+            [id] => 154402
+            [trans_code] => 2017101964
+            [trans_date] => 2017-10-13
+            [product_id] => 23
+            [location_id] => 1
+            [territory_id] => 
+            [customer_id] => 4648
+            [delivery_date] => 2017-10-23 00:00:00
+            [rec_mobile] => 
+            [recieved_by] => KAMRAN ATTARI
+            [delivery_state_no] => RECEIVED
+            [quantity] => 1
+            [dispatch_status] => 1
+            [consignment_no] => 
+            [courier] => fcs
+            [rider_id] => 19962
+            [is_allocate] => 1
+            [is_delivered] => 1
+            [dist_point_id] => 4
+            [status] => 1
+            [created_date] => 2017-10-13 11:56:58
+            [created_by] => 1
+            [modify_date] => 2018-02-01 10:57:02
+            [modify_by] => 1
+            [is_enable] => 1
+            [prv_dispatch_status] => 0
+        )
+
+    [10] => stdClass Object
+        (
+            [id] => 173572
+            [trans_code] => 2017112119
+            [trans_date] => 2017-11-09
+            [product_id] => 25
+            [location_id] => 1
+            [territory_id] => 
+            [customer_id] => 4648
+            [delivery_date] => 2014-11-17 00:00:00
+            [rec_mobile] => 
+            [recieved_by] => SIGNATURE
+            [delivery_state_no] => RECEIVED
+            [quantity] => 1
+            [dispatch_status] => 1
+            [consignment_no] => 
+            [courier] => fcs
+            [rider_id] => 19962
+            [is_allocate] => 1
+            [is_delivered] => 1
+            [dist_point_id] => 4
+            [status] => 1
+            [created_date] => 2017-11-09 13:00:57
+            [created_by] => 1
+            [modify_date] => 2018-02-01 11:02:57
+            [modify_by] => 1
+            [is_enable] => 1
+            [prv_dispatch_status] => 0
+        )
+
+    [11] => stdClass Object
+        (
+            [id] => 191020
+            [trans_code] => 2017122281
+            [trans_date] => 2017-12-09
+            [product_id] => 27
+            [location_id] => 1
+            [territory_id] => 
+            [customer_id] => 4648
+            [delivery_date] => 2018-01-09 00:00:00
+            [rec_mobile] => 
+            [recieved_by] => KAMRAN ATTARI
+            [delivery_state_no] => RECEIVED
+            [quantity] => 1
+            [dispatch_status] => 1
+            [consignment_no] => 
+            [courier] => fcs
+            [rider_id] => 19962
+            [is_allocate] => 1
+            [is_delivered] => 1
+            [dist_point_id] => 4
+            [status] => 1
+            [created_date] => 2017-12-09 10:06:09
+            [created_by] => 1
+            [modify_date] => 2018-03-24 17:50:35
+            [modify_by] => 1
+            [is_enable] => 1
+            [prv_dispatch_status] => 0
+        )
+
+)
+ -->
+        <div class="space-2"></div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="table-header">
+                            Results for Customer's Distributions
+                        </div>
+                        <div class="table-responsive sample-table-5">
+                            <table id="payment_table" class="table table-striped table-responsive table-bordered table-hover">
+                                <thead>
+                                    <tr>
+
+										<th>Cust ID</th>
+										<th>RefNo.</th>
+			                            <th>Package No.</th>
+                                        <th>Package Date</th>
+                                        <th>Product</th>
+                                        <th>Dispatch Status</th>
+                                        <th>Consignment No.</th>
+                                        <th>Rider</th>
+                                        <th>Courier</th>
+                                        <th>Delivery Date</th>
+                                        <th>Delivery Status</th>
+                                        <th>Recieved By</th>
+                                                                                <th>Action</th>
+                                                                            </tr>
+                                </thead>
+                                <tbody>
+                                                                            
+                                        <tr>
+                                    
+		                                    <td>4648</td>       
+                                    		<td>1327</td>
+											<td>2017020017</td>
+											<td>2017-02-06</td>
+											<td>
+												Jamadi ul Awwal / February 2017 - Khas			                                </td>
+											<td>Dispatched</td>
+											<td>801014289933</td>
+                                            <td></td>
+											<td>TCS</td>
+											<td>16-02-2017</td>
+											<td>OK</td>
+											<td>ZAIN</td>
+											                                            <td>
+                                                <a href="https://#/Complain/add_update/1327" class="tooltip-success" data-rel="tooltip" title="Edit">
+                                                                <span class="green">
+                                                                    <i class="icon-edit bigger-120"></i>
+                                                                </span>
+                                                </a>
+                                            </td>
+                                                                            		</tr>
+
+                                                                                                                                
+                                        <tr>
+                                    
+		                                    <td>4648</td>       
+                                    		<td>13993</td>
+											<td>2017020115</td>
+											<td>2017-02-28</td>
+											<td>
+												Jamadi us Sani / March 2017 - Khas			                                </td>
+											<td>Dispatched</td>
+											<td>801014306602</td>
+                                            <td></td>
+											<td>TCS</td>
+											<td></td>
+											<td></td>
+											<td></td>
+											                                            <td>
+                                                <a href="https://#/Complain/add_update/13993" class="tooltip-success" data-rel="tooltip" title="Edit">
+                                                                <span class="green">
+                                                                    <i class="icon-edit bigger-120"></i>
+                                                                </span>
+                                                </a>
+                                            </td>
+                                                                            		</tr>
+
+                                                                                                                                
+                                        <tr>
+                                    
+		                                    <td>4648</td>       
+                                    		<td>32281</td>
+											<td>2017030269</td>
+											<td>2017-03-26</td>
+											<td>
+												April 2017 - Khas			                                </td>
+											<td>Dispatched</td>
+											<td>201405751765</td>
+                                            <td></td>
+											<td>OCS</td>
+											<td></td>
+											<td></td>
+											<td></td>
+											                                            <td>
+                                                <a href="https://#/Complain/add_update/32281" class="tooltip-success" data-rel="tooltip" title="Edit">
+                                                                <span class="green">
+                                                                    <i class="icon-edit bigger-120"></i>
+                                                                </span>
+                                                </a>
+                                            </td>
+                                                                            		</tr>
+
+                                                                                                                                
+                                        <tr>
+                                    
+		                                    <td>4648</td>       
+                                    		<td>54217</td>
+											<td>2017040432</td>
+											<td>2017-04-26</td>
+											<td>
+												May 2017 - Khas			                                </td>
+											<td>Dispatched</td>
+											<td></td>
+                                            <td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											                                            <td>
+                                                <a href="https://#/Complain/add_update/54217" class="tooltip-success" data-rel="tooltip" title="Edit">
+                                                                <span class="green">
+                                                                    <i class="icon-edit bigger-120"></i>
+                                                                </span>
+                                                </a>
+                                            </td>
+                                                                            		</tr>
+
+                                                                                                                                
+                                        <tr>
+                                    
+		                                    <td>4648</td>       
+                                    		<td>78206</td>
+											<td>2017050737</td>
+											<td>2017-05-25</td>
+											<td>
+												June 2017 - Khas			                                </td>
+											<td>Dispatched</td>
+											<td></td>
+                                            <td>Razavi Kabina</td>
+											<td>FCS</td>
+											<td></td>
+											<td></td>
+											<td></td>
+											                                            <td>
+                                                <a href="https://#/Complain/add_update/78206" class="tooltip-success" data-rel="tooltip" title="Edit">
+                                                                <span class="green">
+                                                                    <i class="icon-edit bigger-120"></i>
+                                                                </span>
+                                                </a>
+                                            </td>
+                                                                            		</tr>
+
+                                                                                                                                
+                                        <tr>
+                                    
+		                                    <td>4648</td>       
+                                    		<td>87142</td>
+											<td>2017060929</td>
+											<td>2017-06-17</td>
+											<td>
+												July 2017 - Khas			                                </td>
+											<td>Dispatched</td>
+											<td></td>
+                                            <td>Razavi Kabina</td>
+											<td>FCS</td>
+											<td></td>
+											<td></td>
+											<td></td>
+											                                            <td>
+                                                <a href="https://#/Complain/add_update/87142" class="tooltip-success" data-rel="tooltip" title="Edit">
+                                                                <span class="green">
+                                                                    <i class="icon-edit bigger-120"></i>
+                                                                </span>
+                                                </a>
+                                            </td>
+                                                                            		</tr>
+
+                                                                                                                                
+                                        <tr>
+                                    
+		                                    <td>4648</td>       
+                                    		<td>111793</td>
+											<td>2017071205</td>
+											<td>2017-07-23</td>
+											<td>
+												August 2017 - Khas			                                </td>
+											<td>Dispatched</td>
+											<td></td>
+                                            <td>Razavi Kabina</td>
+											<td>FCS</td>
+											<td>31-07-2017</td>
+											<td>RECEIVED</td>
+											<td>KAMRAN</td>
+											                                            <td>
+                                                <a href="https://#/Complain/add_update/111793" class="tooltip-success" data-rel="tooltip" title="Edit">
+                                                                <span class="green">
+                                                                    <i class="icon-edit bigger-120"></i>
+                                                                </span>
+                                                </a>
+                                            </td>
+                                                                            		</tr>
+
+                                                                                                                                
+                                        <tr>
+                                    
+		                                    <td>4648</td>       
+                                    		<td>129747</td>
+											<td>2017081461</td>
+											<td>2017-08-21</td>
+											<td>
+												September 2017 - Khas			                                </td>
+											<td>Dispatched</td>
+											<td></td>
+                                            <td>Razavi Kabina</td>
+											<td>FCS</td>
+											<td>01-01-1970</td>
+											<td>RECEIVED</td>
+											<td>KAMRAN</td>
+											                                            <td>
+                                                <a href="https://#/Complain/add_update/129747" class="tooltip-success" data-rel="tooltip" title="Edit">
+                                                                <span class="green">
+                                                                    <i class="icon-edit bigger-120"></i>
+                                                                </span>
+                                                </a>
+                                            </td>
+                                                                            		</tr>
+
+                                                                                                                                
+                                        <tr>
+                                    
+		                                    <td>4648</td>       
+                                    		<td>147134</td>
+											<td>2017091766</td>
+											<td>2017-09-19</td>
+											<td>
+												October 2017 - Khas			                                </td>
+											<td>Dispatched</td>
+											<td></td>
+                                            <td>Razavi Kabina</td>
+											<td>FCS</td>
+											<td>22-09-2017</td>
+											<td>RECEIVED</td>
+											<td>KAMRAN</td>
+											                                            <td>
+                                                <a href="https://#/Complain/add_update/147134" class="tooltip-success" data-rel="tooltip" title="Edit">
+                                                                <span class="green">
+                                                                    <i class="icon-edit bigger-120"></i>
+                                                                </span>
+                                                </a>
+                                            </td>
+                                                                            		</tr>
+
+                                                                                                                                
+                                        <tr>
+                                    
+		                                    <td>4648</td>       
+                                    		<td>154402</td>
+											<td>2017101964</td>
+											<td>2017-10-13</td>
+											<td>
+												Safar ul Muzaffar 1439 / November 2017 - Khas			                                </td>
+											<td>Dispatched</td>
+											<td></td>
+                                            <td>Razavi Kabina</td>
+											<td>FCS</td>
+											<td>23-10-2017</td>
+											<td>RECEIVED</td>
+											<td>KAMRAN ATTARI</td>
+											                                            <td>
+                                                <a href="https://#/Complain/add_update/154402" class="tooltip-success" data-rel="tooltip" title="Edit">
+                                                                <span class="green">
+                                                                    <i class="icon-edit bigger-120"></i>
+                                                                </span>
+                                                </a>
+                                            </td>
+                                                                            		</tr>
+
+                                                                                                                                
+                                        <tr>
+                                    
+		                                    <td>4648</td>       
+                                    		<td>173572</td>
+											<td>2017112119</td>
+											<td>2017-11-09</td>
+											<td>
+												Rabi Un Noor Shareef 1439 / December 2017 - Khas			                                </td>
+											<td>Dispatched</td>
+											<td></td>
+                                            <td>Razavi Kabina</td>
+											<td>FCS</td>
+											<td>17-11-2014</td>
+											<td>RECEIVED</td>
+											<td>SIGNATURE</td>
+											                                            <td>
+                                                <a href="https://#/Complain/add_update/173572" class="tooltip-success" data-rel="tooltip" title="Edit">
+                                                                <span class="green">
+                                                                    <i class="icon-edit bigger-120"></i>
+                                                                </span>
+                                                </a>
+                                            </td>
+                                                                            		</tr>
+
+                                                                                                                                
+                                        <tr>
+                                    
+		                                    <td>4648</td>       
+                                    		<td>191020</td>
+											<td>2017122281</td>
+											<td>2017-12-09</td>
+											<td>
+												Rabi ul Ghous 1439 / January 2018 - Khas			                                </td>
+											<td>Dispatched</td>
+											<td></td>
+                                            <td>Razavi Kabina</td>
+											<td>FCS</td>
+											<td>09-01-2018</td>
+											<td>RECEIVED</td>
+											<td>KAMRAN ATTARI</td>
+											                                            <td>
+                                                <a href="https://#/Complain/add_update/191020" class="tooltip-success" data-rel="tooltip" title="Edit">
+                                                                <span class="green">
+                                                                    <i class="icon-edit bigger-120"></i>
+                                                                </span>
+                                                </a>
+                                            </td>
+                                                                            		</tr>
+
+                                                                                                                        </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <br><br><br><br>
+        <!--        Customer Distributions Return table -->
+        <!-- Array
+(
+    [0] => stdClass Object
+        (
+            [ret_id] => 3844
+            [id] => 2
+            [description] => 
+            [return_date] => 2017-04-14 16:48:13
+            [inv_distribution_id] => 32281
+            [consignment_no] => 201405751765
+            [trans_code] => 2017030269
+            [status] => 3
+            [is_enable] => 1
+            [created_date] => 2017-04-08 16:05:37
+            [created_by] => 0
+            [modify_date] => 
+            [modify_by] => 0
+            [reason_id] => 2
+            [product_id] => 9
+            [customer_id] => 4648
+            [reason] => Incomplete Address
+        )
+
+)
+ -->
+        <div class="space-2"></div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="row">
+                    <div class="col-xs-12">
+             <!--              <div class="col-xs-12 col-sm-4" style="float:right;margin-right:-200px">
+                    <a href="https://#/Complain/add_return" class="pull-right btn bigger-50 ws-btn-font  btn-success" style="float: left !important;">Add New</a>
+                </div> -->
+                        <div class="table-header">
+                            Return Results
+                        </div>
+
+                        <div class="table-responsive sample-table-5">
+                            <table id="payment_table" class="table table-striped table-responsive table-bordered table-hover">
+                                <thead>
+                                    <tr>
+
+										<th>Cust ID</th>
+                                        <th>Ret ID</th>
+                                        <th>RefNo.</th>
+                                        <th>Consignment No</th>
+                                        <th>Trans No</th>
+                                        <th>Product </th>
+
+                                        <th>Return Date</th>
+                                        <th>Status</th>
+                                        <th>Reason</th>
+                                         <!-- <th>Action</th> -->
+                                    </tr>
+                                </thead>
+       
+                     <tbody>
+                                                                            <tr>
+                                    		<td>4648</td>
+                                            <td>3844</td>       
+                                            <td>32281</td>
+                                            <td>201405751765</td>
+                                            <td>2017030269</td>
+                                        <td>
+                                        April 2017 - Khas                              
+</td>
+                                            <td>2017-04-14 16:48:13</td>
+                                            <td>Re Farward</td>
+                                            <td>Incomplete Address</td>
+                                         <!--    <td>
+                                                <a href="" class="tooltip-success" data-rel="tooltip" title="Edit">
+                                                                <span class="green">
+                                                                    <i class="icon-edit bigger-120"></i>
+                                                                </span>
+                                                </a>
+                                            </td> -->
+                                        </tr>
+                                                                    </tbody> 
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <br><br><br><br>
+
+
+<!--        Complain table -->
+<!-- Array
+(
+)
+ -->
+        <div class="space-2"></div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="table-header">
+                            Results for Customer's Previous Complain
+                        </div>
+                        <div class="table-responsive sample-table-5">
+                            <table id="payment_table" class="table table-striped table-responsive table-bordered table-hover">
+                                <thead>
+                                    <tr>
+
+										<th>Complain ID</th>
+                                        <th>Phone No </th>
+                                        <th>Name</th>
+                                        <th>Slip No.</th>
+                                        <th>City</th>
+                                        <th>Description</th>
+                                        <th>Remarks</th>
+                                        <th>Complain Status</th>
+                                        <th>Complain Date</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                                                    </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+
+        <!--<script type="text/javascript">
+            jQuery(function($) 
+                {
+                    var oTable1 = $('#customer_table').dataTable(
+                        {
+                            "aoColumns":
+                                [
+                                    { "bSortable": true },
+                                    { "bSortable": true },
+                                    { "bSortable": true },
+                                    { "bSortable": true },
+                                    { "bSortable": true },
+                                    { "bSortable": true },
+                                    { "bSortable": true },
+                                    { "bSortable": true },
+                                    { "bSortable": true },
+                                    { "bSortable": true },
+                                    { "bSortable": false }
+                                ] ,
+                            "iDisplayLength": 1000
+                        });
+
+                    var oTable1 = $('#payment_table').dataTable(
+                        {
+                            "aoColumns": 
+                            [
+                                { "bSortable": true }, 
+                                { "bSortable": true }, 
+                                { "bSortable": true }, 
+                                { "bSortable": true },
+                                { "bSortable": true },
+                                { "bSortable": true },
+
+                            ] 
+                    });      
+            });
+        </script>
+        	--></div>
+
+            </form>  
+
+            <!-- PAGE CONTENT ENDS -->
         </div><!-- /.col -->
+
     </div><!-- /.row -->
 
 
-    <script src="Shared/jquery-latest.js"></script>
 
-    <script src="Shared/intlTelInput.js"></script>
-
-    <!-- <script src="https://#/public_html/assets/build/js/intlTelInput.js"></script>  -->
-
-    <script src="Shared/countryflagmobile.js"></script>
-
-
-    <script type="text/javascript">
-
-        initiateFlagMobile($("#mobile_no"));
-    </script>
-
-
-</div></div><!-- /.main-content -->
+</div>
+</div><!-- /.main-content -->
 
 <!--<div class="ace-settings-container" id="ace-settings-container">
 <div class="btn btn-app btn-xs btn-warning ace-settings-btn" id="ace-settings-btn">
@@ -606,27 +1423,27 @@ Inside
 <script src="Shared/jquery-ui-1.js"></script>
 
 <script src="Shared/jquery-ui-1.js"></script>
-<script src="Shared/jquery_003.js"></script>
 <script src="Shared/jquery_005.js"></script>
-<script src="Shared/jquery_008.js"></script>
-<script src="Shared/jquery.js"></script>
-<script src="Shared/jquery_011.js"></script>
 <script src="Shared/jquery_006.js"></script>
+<script src="Shared/jquery_009.js"></script>
+<script src="Shared/jquery.js"></script>
+<script src="Shared/jquery_012.js"></script>
+<script src="Shared/jquery_007.js"></script>
 <script src="Shared/bootstrap-datetimepicker.js"></script>
 
 
-<script src="Shared/fuelux_002.js"></script>
 <script src="Shared/fuelux_003.js"></script>
 <script src="Shared/fuelux.js"></script>
-<script src="Shared/jquery_007.js"></script>
+<script src="Shared/fuelux_002.js"></script>
+<script src="Shared/jquery_003.js"></script>
 <script src="Shared/additional-methods.js"></script>
 <script src="Shared/bootbox.js"></script>
-<script src="Shared/jquery_004.js"></script>
 <script src="Shared/jquery_002.js"></script>
-<script src="Shared/jquery_010.js"></script>
+<script src="Shared/jquery_004.js"></script>
+<script src="Shared/jquery_008.js"></script>
 <!--<script type="text/javascript" language="javascript" src="http://cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js"></script>-->
 
-<script src="Shared/jquery_009.js"></script>
+<script src="Shared/jquery_010.js"></script>
 <script src="Shared/spin.js"></script>
 
 
@@ -673,7 +1490,7 @@ Inside
 <!-- Date Picker-->
 <script src="Shared/bootstrap-datepicker.js"></script>
 
-<script src="Shared/jquery_012.js"></script>
+<script src="Shared/jquery_011.js"></script>
 <!--  <script src="https://#/public_html/assets/js/jquery.cookie.js"></script>-->
 
 <!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.16/datatables.min.css"/> -->
@@ -2487,4 +3304,4 @@ $(".form_datetime").datetimepicker({
 
 
 
-<div class="datetimepicker datetimepicker-dropdown-bottom-right dropdown-menu" style="left: 0px; z-index: 1010; display: none; top: 29px;"><div class="datetimepicker-minutes" style="display: none;"><table class=" table-condensed"><thead><tr><th class="prev" style="visibility: visible;"><i class="glyphicon icon-arrow-left"></i></th><th colspan="5" class="switch">19 December 2018</th><th class="next" style="visibility: visible;"><i class="glyphicon icon-arrow-right"></i></th></tr></thead><tbody><tr><td colspan="7"><fieldset class="minute"><legend>PM</legend><span class="minute">12:00</span><span class="minute">12:05</span><span class="minute">12:10</span><span class="minute">12:15</span><span class="minute">12:20</span><span class="minute">12:25</span><span class="minute">12:30</span><span class="minute active">12:35</span><span class="minute">12:40</span><span class="minute">12:45</span><span class="minute">12:50</span><span class="minute">12:55</span></fieldset></td></tr></tbody><tfoot><tr><th colspan="7" class="today" style="display: none;">Today</th></tr><tr><th colspan="7" class="clear" style="display: none;">Clear</th></tr></tfoot></table></div><div class="datetimepicker-hours" style="display: none;"><table class=" table-condensed"><thead><tr><th class="prev" style="visibility: visible;"><i class="glyphicon icon-arrow-left"></i></th><th colspan="5" class="switch">19 December 2018</th><th class="next" style="visibility: visible;"><i class="glyphicon icon-arrow-right"></i></th></tr></thead><tbody><tr><td colspan="7"><fieldset class="hour"><legend>AM</legend><span class="hour hour_am">12</span><span class="hour hour_am">1</span><span class="hour hour_am">2</span><span class="hour hour_am">3</span><span class="hour hour_am">4</span><span class="hour hour_am">5</span><span class="hour hour_am">6</span><span class="hour hour_am">7</span><span class="hour hour_am">8</span><span class="hour hour_am">9</span><span class="hour hour_am">10</span><span class="hour hour_am">11</span></fieldset><fieldset class="hour"><legend>PM</legend><span class="hour active hour_pm">12</span><span class="hour hour_pm">1</span><span class="hour hour_pm">2</span><span class="hour hour_pm">3</span><span class="hour hour_pm">4</span><span class="hour hour_pm">5</span><span class="hour hour_pm">6</span><span class="hour hour_pm">7</span><span class="hour hour_pm">8</span><span class="hour hour_pm">9</span><span class="hour hour_pm">10</span><span class="hour hour_pm">11</span></fieldset></td></tr></tbody><tfoot><tr><th colspan="7" class="today" style="display: none;">Today</th></tr><tr><th colspan="7" class="clear" style="display: none;">Clear</th></tr></tfoot></table></div><div class="datetimepicker-days" style="display: block;"><table class=" table-condensed"><thead><tr><th class="prev" style="visibility: visible;"><i class="glyphicon icon-arrow-left"></i></th><th colspan="5" class="switch">December 2018</th><th class="next" style="visibility: visible;"><i class="glyphicon icon-arrow-right"></i></th></tr><tr><th class="dow">Su</th><th class="dow">Mo</th><th class="dow">Tu</th><th class="dow">We</th><th class="dow">Th</th><th class="dow">Fr</th><th class="dow">Sa</th></tr></thead><tbody><tr><td class="day old">25</td><td class="day old">26</td><td class="day old">27</td><td class="day old">28</td><td class="day old">29</td><td class="day old">30</td><td class="day">1</td></tr><tr><td class="day">2</td><td class="day">3</td><td class="day">4</td><td class="day">5</td><td class="day">6</td><td class="day">7</td><td class="day">8</td></tr><tr><td class="day">9</td><td class="day">10</td><td class="day">11</td><td class="day">12</td><td class="day">13</td><td class="day">14</td><td class="day">15</td></tr><tr><td class="day">16</td><td class="day">17</td><td class="day">18</td><td class="day active">19</td><td class="day">20</td><td class="day">21</td><td class="day">22</td></tr><tr><td class="day">23</td><td class="day">24</td><td class="day">25</td><td class="day">26</td><td class="day">27</td><td class="day">28</td><td class="day">29</td></tr><tr><td class="day">30</td><td class="day">31</td><td class="day new">1</td><td class="day new">2</td><td class="day new">3</td><td class="day new">4</td><td class="day new">5</td></tr></tbody><tfoot><tr><th colspan="7" class="today" style="display: none;">Today</th></tr><tr><th colspan="7" class="clear" style="display: none;">Clear</th></tr></tfoot></table></div><div class="datetimepicker-months" style="display: none;"><table class="table-condensed"><thead><tr><th class="prev" style="visibility: visible;"><i class="glyphicon icon-arrow-left"></i></th><th colspan="5" class="switch">2018</th><th class="next" style="visibility: visible;"><i class="glyphicon icon-arrow-right"></i></th></tr></thead><tbody><tr><td colspan="7"><span class="month">Jan</span><span class="month">Feb</span><span class="month">Mar</span><span class="month">Apr</span><span class="month">May</span><span class="month">Jun</span><span class="month">Jul</span><span class="month">Aug</span><span class="month">Sep</span><span class="month">Oct</span><span class="month">Nov</span><span class="month active">Dec</span></td></tr></tbody><tfoot><tr><th colspan="7" class="today" style="display: none;">Today</th></tr><tr><th colspan="7" class="clear" style="display: none;">Clear</th></tr></tfoot></table></div><div class="datetimepicker-years" style="display: none;"><table class="table-condensed"><thead><tr><th class="prev" style="visibility: visible;"><i class="glyphicon icon-arrow-left"></i></th><th colspan="5" class="switch">2010-2019</th><th class="next" style="visibility: visible;"><i class="glyphicon icon-arrow-right"></i></th></tr></thead><tbody><tr><td colspan="7"><span class="year ">2009</span><span class="year">2010</span><span class="year">2011</span><span class="year">2012</span><span class="year">2013</span><span class="year">2014</span><span class="year">2015</span><span class="year">2016</span><span class="year">2017</span><span class="year active">2018</span><span class="year">2019</span><span class="year ">2020</span></td></tr></tbody><tfoot><tr><th colspan="7" class="today" style="display: none;">Today</th></tr><tr><th colspan="7" class="clear" style="display: none;">Clear</th></tr></tfoot></table></div></div></body></html>
+</body></html>
