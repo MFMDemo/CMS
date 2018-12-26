@@ -1,0 +1,24 @@
+@font-face {
+	font-family: Al_Mushaf;
+	src: url("../font/Al_Mushaf.ttf");
+}
+
+.selected td {
+	background: #6fb3e0 !important;
+}
+
+.selected a {
+	color: black;
+}
+
+.highlight {
+	background-color: yellow
+}
+
+.urdu-font {
+	font-family: "Jameel Noori Nastaleeq";
+}
+
+.urdu-font h3 {
+	font-family: "Jameel Noori Nastaleeq";
+}

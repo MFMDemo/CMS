@@ -1,0 +1,3156 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <style type="text/css">
+        .blinking{
+    animation:blinkingText 0.1s ;
+}
+@keyframes blinkingText{
+    0%{     color: #000;    }
+    49%{    color: transparent; }
+    50%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #000;    }
+}
+    </style>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <meta charset="utf-8">
+    <title> Subscription</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- basic styles -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <link href="Shared/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="Shared/font-awesome.css">
+
+
+    <!--[if IE 7]>
+    <link rel="stylesheet"https://subscription.maktabatulmadinah.com/public_html/assets/css/font-awesome-ie7.min.css"/>
+<![endif]-->
+
+<!-- page specific plugin styles -->
+<link rel="stylesheet" href="Shared/jquery.css">
+<!-- fonts -->
+
+<link rel="stylesheet" href="Shared/ace-fonts.css">
+
+<!-- ace styles -->
+
+<link rel="stylesheet" href="Shared/ace.css">
+<!--<link rel="stylesheet" href="https://subscription.maktabatulmadinah.com/public_html/assets/css/font.css" />-->
+<link rel="stylesheet" href="Shared/ace-rtl.css">
+<link rel="stylesheet" href="Shared/jquery-ui-1.css">
+<link rel="stylesheet" href="Shared/ace-skins.css">
+
+<link rel="stylesheet" href="Shared/style.css">
+<link rel="stylesheet" href="Shared/bootstrap-datetimepicker.css">
+
+<!-- country code and telephone picker -->
+<link rel="stylesheet" href="Shared/intlTelInput.css">
+
+
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="https://subscription.maktabatulmadinah.com/public_html/assets/css/ace-ie.min.css" />
+<![endif]-->
+
+<!-- inline styles related to this page -->
+
+<!-- ace settings handler -->
+
+<script src="Shared/ace-extra.js"></script>
+
+
+<!-- country code and telephone picker -->
+<link rel="stylesheet" href="Shared/intlTelInput.css">
+
+<!-- Date Picker -->
+
+<link rel="stylesheet" href="Shared/datepicker.css">
+<!-- Dropdown Css -->
+<link rel="stylesheet" href="Shared/jquery-ui-1_002.css">
+<link rel="stylesheet" href="Shared/chosen.css">
+
+<!--Mahanama Karkaardagi CSS links-->
+<link rel="stylesheet" href="Shared/style_002.css">
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+
+    <!--[if lt IE 9]>
+    <script src="https://subscription.maktabatulmadinah.com/public_html/assets/js/html5shiv.js"></script>
+    <script src="https://subscription.maktabatulmadinah.com/public_html/assets/js/respond.min.js"></script>
+<![endif]-->
+
+<script type="text/javascript" src="Shared/jquery-2.js"></script>
+
+<script type="text/javascript">
+
+    var appContext = "https://subscription.maktabatulmadinah.com/";
+</script>
+
+<script type="text/javascript">
+    var fileDownloadCheckTimer = null;
+</script><script type="text/javascript">
+    var BASEURL = 'https://subscription.maktabatulmadinah.com/';
+</script><style type="text/css"></style></head>
+
+
+
+
+<body onbeforeunload="loadingPage()" style="">
+    <div class="navbar navbar-default" id="navbar">
+        <script type="text/javascript">
+            try{ace.settings.check('navbar' , 'fixed')}catch(e){}
+        </script>
+
+        <div class="navbar-container" id="navbar-container">
+            <div class="navbar-header pull-left">
+                <a href="#" class="navbar-brand">
+                    <small>
+                        <i class="icon-lock"></i>
+                        Subscription
+                    </small>
+                </a><!-- /.brand -->
+            </div><!-- /.navbar-header -->
+
+            <div class="navbar-header pull-right" role="navigation">
+                <ul class="nav ace-nav">
+                 <li class="purple">
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                        <i class="icon-bell-alt icon-animated-bell"></i>
+                        <span class="badge badge-important">
+                            1833                                    
+                        </span>
+                    </a>
+                    <ul class="pull-right dropdown-navbar navbar-pink dropdown-menu dropdown-caret dropdown-close">
+                        <li class="dropdown-header">
+                            <i class="icon-warning-sign"></i>
+                            Three months customers
+                        </li>
+                        <li>
+                            <a href="https://subscription.maktabatulmadinah.com/Form/customer_expire/1">
+                                <div class="clearfix">
+                                    <span class="pull-left">
+                                      <i class="btn btn-xs no-hover btn-pink icon-user"></i>
+                                      After 1 Month
+                                  </span>
+                                  <span class="pull-right badge badge-success">  650</span>
+                              </div>
+                          </a>
+                      </li>
+                      <li>
+                        <a href="https://subscription.maktabatulmadinah.com/Form/customer_expire/2">
+                            <div class="clearfix">
+                                <span class="pull-left">
+                                    <i class="btn btn-xs no-hover btn-info icon-user"></i>
+                                    After 2 Month
+                                </span>
+                                <span class="pull-right badge badge-success">
+                                720                                             </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://subscription.maktabatulmadinah.com/Form/customer_expire/3">
+                            <div class="clearfix">
+                                <span class="pull-left">
+                                  <i class="btn btn-xs no-hover btn-success icon-user"></i>
+                                  After 3 Month
+                              </span>
+                              <span class="pull-right badge badge-success">
+                              464                                            </span>
+                          </div>
+                      </a>
+                  </li>
+                            <!--    <li>
+                                    <a href="#">
+                                        See all notifications
+                                        <i class="icon-arrow-right"></i>
+                                    </a>
+                                </li>  -->
+                            </ul> 
+                        </li>
+                        <li class="light-blue">
+                            <a data-toggle="dropdown" href="#" class="dropdown-toggle">
+                                <img class="nav-user-photo" src="Shared/userdummy.png" alt="Jason's Photo">
+                                <span class="user-info">
+                                    <small>Welcome,</small>
+                                superadmin                        </span>
+
+                                <i class="icon-caret-down"></i>
+                            </a>
+
+                            <ul class="user-menu pull-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
+                        <!-- <li>
+                        <a href="#">
+                        <i class="icon-cog"></i>
+                        Settings
+                        </a>
+                        </li>
+
+                        <li>
+                        <a href="#">
+                        <i class="icon-user"></i>
+                        Profile
+                        </a>
+                    </li>   -->
+
+                    <!-- <li class="divider"></li>  -->
+
+                    <li>
+                        <a href="https://subscription.maktabatulmadinah.com/Login/logout">
+                            <i class="icon-off"></i>
+                            Logout
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul><!-- /.ace-nav -->
+    </div><!-- /.navbar-header -->
+</div><!-- /.container -->
+</div>
+
+<div class="main-container" id="main-container">
+    <script type="text/javascript">
+        try{ace.settings.check('main-container' , 'fixed')}catch(e){}
+    </script>
+
+    <div class="main-container-inner">
+        <a class="menu-toggler" id="menu-toggler" href="#">
+            <span class="menu-text"></span>
+        </a>
+
+
+        <div class="sidebar " id="sidebar">
+            <script type="text/javascript">
+                try{ace.settings.check('sidebar' , 'fixed')}catch(e){}
+            </script>
+
+            <div class="sidebar-shortcuts" id="sidebar-shortcuts">
+                <div class="sidebar-shortcuts-large" id="sidebar-shortcuts-large">
+                    <button class="btn btn-success">
+                        <i class="icon-signal"></i>
+                    </button>
+
+                    <button class="btn btn-info">
+                        <i class="icon-pencil"></i>
+                    </button>
+
+                    <button class="btn btn-warning">
+                        <i class="icon-group"></i>
+                    </button>
+
+                    <button class="btn btn-danger">
+                        <i class="icon-cogs"></i>
+                    </button>
+                </div>
+
+                <div class="sidebar-shortcuts-mini" id="sidebar-shortcuts-mini">
+                    <span class="btn btn-success"></span>
+
+                    <span class="btn btn-info"></span>
+
+                    <span class="btn btn-warning"></span>
+
+                    <span class="btn btn-danger"></span>
+                </div>
+            </div><!-- #sidebar-shortcuts -->
+
+
+
+
+            <ul class="nav nav-list" id="nav-placeholder">
+
+
+            </ul><!-- /.nav-list -->
+
+
+            <div class="sidebar-collapse" id="sidebar-collapse">
+                <i class="icon-double-angle-left" data-icon1="icon-double-angle-left" data-icon2="icon-double-angle-right"></i>
+            </div>
+
+            <script type="text/javascript">
+                $(function(){
+                  $("#nav-placeholder").load("nav.htm");
+              });
+                try{ace.settings.check('sidebar' , 'collapsed')}catch(e){}
+            </script>
+        </div>
+
+        <div class="main-content"><div class="breadcrumbs " id="breadcrumbs">
+            <script type="text/javascript">
+                try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}
+            </script>
+
+            <ul class="breadcrumb">
+                <li>
+                    <i class="icon-home home-icon"></i>
+                    <a href="https://subscription.maktabatulmadinah.com/Dashboard">Dashboard</a>
+                </li>
+
+        <!-- <li>
+        <a href="#">Other Pages</a>
+        </li>
+        <li class="active">Blank Page</li> -->
+    </ul><!-- .breadcrumb -->
+
+
+</div><div class="page-content">
+    <div class="page-header">
+        <h1>
+            Dispatch List
+            <small>
+                <i class="icon-double-angle-right"></i>
+                Dispatch List 
+            </small>
+            <i class="icon-spinner icon-spin orange bigger-125 hide"></i>
+        </h1>
+    </div><!-- /.page-header -->
+
+
+    <div class="row" style="height:240px;">
+        <div class="col-xs-12 col-sm-8">
+
+            <!-- PAGE CONTENT BEGINS -->
+            <form action="https://subscription.maktabatulmadinah.com/Form/get_customer_dispatch_list" class="form-horizontal form-validate-dispatch" id="register-form" role="form" method="post" accept-charset="utf-8" novalidate="novalidate">
+                <!-- PAGE CONTENT BEGINS -->
+
+
+                <div class="form-group has-info">
+
+                              <div class="form-group">
+
+                <label class="control-label col-xs-12 col-sm-3 no-padding-right" for="Country">
+                    Select User:
+                </label>
+                <div class="col-xs-12 col-sm-9" style="padding: 5px;">
+                    <div class="clearfix">
+                        <select required="" multiple="" id="category_id" name="category_id[]" class="width-48 chosen-select" placeholder="Category" style="display: none;">
+                            <option value="1">Mahnama (Aam - Black &amp; White Copy) Rs.35 per unit </option><option value="2">Mahnama (Khas - Color Copy) Rs.60 per unit</option><option value="3">ENGLISH MAHNAMA </option>                        </select><div class="chosen-container chosen-container-multi" style="width: 440px;" title="" id="category_id_chosen"><ul class="chosen-choices"><li class="search-choice"><span>  User A</span><a class="search-choice-close" data-option-array-index="1"></a></li></ul><div class="chosen-drop"><ul class="chosen-results"><li class="result-selected" style="" data-option-array-index="0">Mahnama (Aam - Black &amp; White Copy) Rs.35 per unit </li><li class="result-selected" style="" data-option-array-index="1">Mahnama (Khas - Color Copy) Rs.60 per unit</li><li class="active-result" style="" data-option-array-index="2">ENGLISH MAHNAMA </li></ul></div></div>
+                    </div>
+                    <font color="red"></font>
+                </div>
+            </div>
+            <div class="form-group">
+
+                <label class="control-label col-xs-12 col-sm-3 no-padding-right" for="Country">
+                    Select Sub User:
+                </label>
+                <div class="col-xs-12 col-sm-9" style="padding: 5px;">
+                    <div class="clearfix">
+                        <select required="" multiple="" id="category_id" name="category_id[]" class="width-48 chosen-select" placeholder="Category" style="display: none;">
+                            <option value="1">Mahnama (Aam - Black &amp; White Copy) Rs.35 per unit </option><option value="2">Mahnama (Khas - Color Copy) Rs.60 per unit</option><option value="3">ENGLISH MAHNAMA </option>                        </select><div class="chosen-container chosen-container-multi" style="width: 440px;" title="" id="category_id_chosen"><ul class="chosen-choices"><li class="search-choice"><span>  User AB</span><a class="search-choice-close" data-option-array-index="1"></a></li></ul><div class="chosen-drop"><ul class="chosen-results"><li class="result-selected" style="" data-option-array-index="0">Mahnama (Aam - Black &amp; White Copy) Rs.35 per unit </li><li class="result-selected" style="" data-option-array-index="1">Mahnama (Khas - Color Copy) Rs.60 per unit</li><li class="active-result" style="" data-option-array-index="2">ENGLISH MAHNAMA </li></ul></div></div>
+                    </div>
+                    <font color="red"></font>
+                </div>
+            </div>
+                </div>
+
+
+
+                    <div class="clearfix form-actions" style="text-align: center;">
+                        <div class="col-md-9 ">
+                            <button class="btn btn-info btn-validate search_dispatch" name="search_dispatch" type="button">
+                                <i class="icon-ok bigger-110"></i>
+                                Search
+                            </button>
+
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-12">
+                <form action="https://subscription.maktabatulmadinah.com/Form/dispatch_submit" class="form-horizontal form-validate-distribution" id="register-form" role="form" method="post" accept-charset="utf-8" novalidate="novalidate">
+
+                    <div id="dispatch_result">        <div class="space-2"></div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="table-header">
+                                        Results for Dispatch List
+                                    </div>
+                                    <div class="table-responsive sample-table-5">
+                                        <div id="dispatch_table_wrapper" class="dataTables_wrapper" role="grid"><div class="row"><div class="col-sm-6"><div id="dispatch_table_length" class="dataTables_length"><label>Display <select size="1" name="dispatch_table_length" aria-controls="dispatch_table"><option value="10" selected="selected">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option><option value="250">250</option><option value="500">500</option></select> records</label></div></div><div class="col-sm-6"><div class="dataTables_filter" id="dispatch_table_filter"><label>Search: <input type="text" aria-controls="dispatch_table"></label></div></div></div><table id="dispatch_table" class="table table-striped table-bordered table-hover dataTable" aria-describedby="dispatch_table_info">
+                                            <thead>
+                                                <tr role="row">
+
+                                                    <th class="sorting" role="columnheader" tabindex="0" aria-controls="dispatch_table" rowspan="1" colspan="1" style="width: 45.8833px;" aria-label="RefNo: activate to sort column ascending">Remaining Time</th>
+                                                    <th class="sorting" role="columnheader" tabindex="0" aria-controls="dispatch_table" rowspan="1" colspan="1" style="width: 45.8833px;" aria-label="RefNo: activate to sort column ascending">Complaint Id</th>
+                                                    <th class="sorting" role="columnheader" tabindex="0" aria-controls="dispatch_table" rowspan="1" colspan="1" style="width: 46.8833px;" aria-label="Cust Id: activate to sort column ascending">Phone No</th>
+                                                    <th class="sorting" role="columnheader" tabindex="0" aria-controls="dispatch_table" rowspan="1" colspan="1" style="width: 88.8833px;" aria-label="Phone No: activate to sort column ascending">Name</th>
+                                                    <th class="sorting" role="columnheader" tabindex="0" aria-controls="dispatch_table" rowspan="1" colspan="1" style="width: 87.8833px;" aria-label="Registration Date: activate to sort column ascending">Cust Id</th>
+                                                    <th class="sorting" role="columnheader" tabindex="0" aria-controls="dispatch_table" rowspan="1" colspan="1" style="width: 141.883px;" aria-label="Name: activate to sort column ascending">City</th>
+
+                                                    <th class="sorting" role="columnheader" tabindex="0" aria-controls="dispatch_table" rowspan="1" colspan="1" style="width: 351.883px;" aria-label="Postal Address: activate to sort column ascending">Description</th>
+                                                    <th class="sorting" role="columnheader" tabindex="0" aria-controls="dispatch_table" rowspan="1" colspan="1" style="width: 100.883px;" aria-label="Product: activate to sort column ascending">Processing Remarks</th>
+                                                    <th class="sorting" role="columnheader" tabindex="0" aria-controls="dispatch_table" rowspan="1" colspan="1" style="width: 67.8833px;" aria-label="Location: activate to sort column ascending">Rosloved Remarks</th>
+                                                    <th class="sorting" role="columnheader" tabindex="0" aria-controls="dispatch_table" rowspan="1" colspan="1" style="width: 55.8833px;" aria-label="No. of Copies: activate to sort column ascending">Status</th>
+                                                     <th class="sorting" role="columnheader" tabindex="0" aria-controls="dispatch_table" rowspan="1" colspan="1" style="width: 55.8833px;" aria-label="No. of Copies: activate to sort column ascending">Action</th>
+                                                </tr>
+                                            </thead>
+
+                                            <tbody role="alert" aria-live="polite" aria-relevant="all">
+                                                <tr class="odd">
+                                                    <td style="color: red" class="blinking" id="timer-id"></td>
+                                                    <td class=" ">2323</td>
+                                                    <td class=" ">923218838194</td>
+                                                    <td class=" ">Muhammad Maroof </td>
+                                                    <td class=" ">121000</td>
+                                                    <td class=" ">Karachi </td>
+                                                    <td class=" "> Jamadi us Sani / March 2017 - Khas <br> Zul-Hijjah 1439 / September 2018 - Khas  <br>...<br> Inka mahnama falah falah vja sy s ni mila</td>
+                                                    <td class=" ">inka mahnanma flah flah s bheja h </td>
+                                                    <td class=" ">Pending</td>
+                                                    <td class=" ">In Progress </td>
+                                                    <td>
+                                                        <span href="javascript:alert('Hello World!');" class="btn btn btn-danger" style="padding:0px 10px;" >Process</span> 
+                                                    </td>
+
+                                                </tr>
+                                                 <tr class="odd">
+                                                    <td style="color: red" class="blinking" id="timer-id1"></td>
+                                                    <td class=" ">2323</td>
+                                                    <td class=" ">923218838194</td>
+                                                    <td class=" ">Muhammad Maroof </td>
+                                                    <td class=" ">121000</td>
+                                                    <td class=" ">Karachi </td>
+                                                    <td class=" "> Jamadi us Sani / March 2017 - Khas <br> Zul-Hijjah 1439 / September 2018 - Khas  <br>...<br> Inka mahnama falah falah vja sy s ni mila</td>
+                                                    <td class=" ">inka mahnanma flah flah s bheja h </td>
+                                                    <td class=" ">Pending</td>
+                                                    <td class=" ">In Progress </td>
+                                                     <td>
+                                                        <span href="javascript:alert('Hello World!');" class="btn btn btn-danger" style="padding:0px 10px;" >Process</span> 
+                                                    </td>
+
+
+                                                </tr>
+                                                 <tr class="odd">
+                                                    <td style="color: red" class="blinking" id="timer-id2"><blink></blink></td>
+                                                    <td class=" ">2323</td>
+                                                    <td class=" ">923218838194</td>
+                                                    <td class=" ">Muhammad Maroof </td>
+                                                    <td class=" ">121000</td>
+                                                    <td class=" ">Karachi </td>
+                                                    <td class=" "> Jamadi us Sani / March 2017 - Khas <br> Zul-Hijjah 1439 / September 2018 - Khas  <br>...<br> Inka mahnama falah falah vja sy s ni mila</td>
+                                                     <td class=" ">inka mahnanma flah flah s bheja h </td>
+                                                    <td class=" ">Pending</td>
+                                                    <td class=" ">In Progress </td>
+                                                    <td>
+                                                        <span href="javascript:alert('Hello World!');" class="btn btn btn-danger" style="padding:0px 10px;" >Process</span> 
+                                                    </td>
+
+
+                                                </tr>
+                                                 <tr class="odd">
+                                                    <td style="color: red" class="blinking" id="timer-id3"></td>
+                                                    <td class=" ">2323</td>
+                                                    <td class=" ">923218838194</td>
+                                                    <td class=" ">Muhammad Maroof </td>
+                                                    <td class=" ">121000</td>
+                                                    <td class=" ">Karachi </td>
+                                                    <td class=" "> Jamadi us Sani / March 2017 - Khas <br> Zul-Hijjah 1439 / September 2018 - Khas  <br>...<br> Inka mahnama falah falah vja sy s ni mila</td>
+                                                     <td class=" ">inka mahnanma flah flah s bheja h </td>
+                                                    <td class=" ">Pending</td>
+                                                    <td class=" ">In Progress </td>
+                                                    <td>
+                                                        <span href="javascript:alert('Hello World!');" class="btn btn btn-danger" style="padding:0px 10px;" >Process</span> 
+                                                    </td>
+
+
+                                                </tr>
+                                            </tbody></table><div class="row"><div class="col-sm-6"><div class="dataTables_info" id="dispatch_table_info">Showing 1 to 10 of 21 entries</div></div><div class="col-sm-6"><div class="dataTables_paginate paging_bootstrap"><ul class="pagination"><li class="prev disabled"><a href="#"><i class="icon-double-angle-left"></i></a></li><li class="active"><a href="#">1</a></li><li><a href="#">2</a></li><li><a href="#">3</a></li><li class="next"><a href="#"><i class="icon-double-angle-right"></i></a></li></ul></div></div></div></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+        <!--<div class="clearfix form-actions" style="text-align: center;">
+        <div class="col-md-6"></div>
+        <div class="col-md-3">
+        <button class="btn pull-right btn-info btn-validate" name="submit_all" type="submit">
+        <i class="icon-ok bigger-110"></i>
+        Generate All
+        </button>
+        </div>
+        <div class="col-md-3">
+        <button class="btn pull-right btn-info btn-validate" name="submit_selected" type="submit">
+        <i class="icon-ok bigger-110"></i>
+        Generate Selected
+        </button>
+
+        </div>
+    </div>-->
+    
+
+</div>
+            <!--
+            <div class="space-2"></div>
+
+
+            <div class="row">
+            <div class="col-xs-12">
+
+
+            <div class="row">
+            <div class="col-xs-12">
+
+            <div class="table-header">
+            Results for Mailing List
+            </div>
+
+            <div class="table-responsive sample-table-5">
+            <table id="mailing_table" class="table table-striped table-bordered table-hover">
+            <thead>
+            <th class="center">
+            <label>
+            <input type="checkbox" class="ace" />
+            <span class="lbl"></span>
+            </label>     
+            </th>
+            <th>Product </th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Quantity</th>
+            <th>Print</th>
+            </thead>
+
+            <tbody>
+
+
+
+
+
+            
+
+
+
+            </tbody>
+            </table>
+            </div>
+            </div>
+            </div>
+
+            </div>
+            </div>
+
+
+            <div class="clearfix form-actions" style="text-align: center;">
+            <div class="col-md-12 ">
+            <button class="btn pull-right btn-info btn-validate" type="submit">
+            <i class="icon-ok bigger-110"></i>
+            Submit
+            </button>
+
+            &nbsp; &nbsp; &nbsp;
+
+            </div>
+        </div>-->
+
+
+    </form>            <!-- PAGE CONTENT ENDS -->
+</div><!-- /.col -->
+
+</div><!-- /.row -->
+
+</div>
+
+
+
+
+
+
+
+
+
+
+</div><!-- /.main-content -->
+
+<!--<div class="ace-settings-container" id="ace-settings-container">
+<div class="btn btn-app btn-xs btn-warning ace-settings-btn" id="ace-settings-btn">
+<i class="icon-cog bigger-150"></i>
+</div>
+
+<div class="ace-settings-box" id="ace-settings-box">
+<div>
+<div class="pull-left">
+<select id="skin-colorpicker" class="hide">
+<option data-skin="default" value="#438EB9">#438EB9</option>
+<option data-skin="skin-1" value="#222A2D">#222A2D</option>
+<option data-skin="skin-2" value="#C6487E">#C6487E</option>
+<option data-skin="skin-3" value="#D0D0D0">#D0D0D0</option>
+</select>
+</div>
+<span>&nbsp; Choose Skin</span>
+</div>
+
+<div>
+<input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-navbar" />
+<label class="lbl" for="ace-settings-navbar"> Fixed Navbar</label>
+</div>
+
+<div>
+<input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-sidebar" />
+<label class="lbl" for="ace-settings-sidebar"> Fixed Sidebar</label>
+</div>
+
+<div>
+<input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-breadcrumbs" />
+<label class="lbl" for="ace-settings-breadcrumbs"> Fixed Breadcrumbs</label>
+</div>
+
+<div>
+<input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-rtl" />
+<label class="lbl" for="ace-settings-rtl"> Right To Left (rtl)</label>
+</div>
+
+<div>
+<input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-add-container" />
+<label class="lbl" for="ace-settings-add-container">
+Inside
+<b>.container</b>
+</label>
+</div>
+</div>
+</div>--><!-- /#ace-settings-container -->
+</div><!-- /.main-container-inner -->
+
+<a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
+    <i class="icon-double-angle-up icon-only bigger-110"></i>
+</a>
+</div><!-- /.main-container -->
+
+<!-- basic scripts -->
+
+<!--[if !IE]> -->
+
+<!--  <script type="text/javascript" src="https://subscription.maktabatulmadinah.com/public_html/assets/js/jquery-2.0.3.min.js"></script> -->
+
+<!-- <![endif]-->
+
+<!--[if IE]>
+<script type="text/javascript">
+    window.jQuery || document.write("<script src='https://subscription.maktabatulmadinah.com/public_html/assets/js/jquery-1.10.2.min.jsassets/js/jquery-1.10.2.min.js'>" + "<" + "/script>");
+</script>
+<![endif]-->
+
+<script type="text/javascript">
+    if ("ontouchend" in document) document.write("<script src='https://subscription.maktabatulmadinah.com/public_html/assets/js/jquery.mobile.custom.min.js'>" + "<" + "/script>");
+</script>
+<script src="Shared/bootstrap.js"></script>
+<script src="Shared/typeahead-bs2.js"></script>
+
+
+<!-- page specific plugin scripts -->
+
+
+<script src="Shared/jquery-ui-1.js"></script>
+
+<script src="Shared/jquery-ui-1.js"></script>
+<script src="Shared/jquery_005.js"></script>
+<script src="Shared/jquery_006.js"></script>
+<script src="Shared/jquery_009.js"></script>
+<script src="Shared/jquery.js"></script>
+<script src="Shared/jquery_012.js"></script>
+<script src="Shared/jquery_007.js"></script>
+<script src="Shared/bootstrap-datetimepicker.js"></script>
+
+
+<script src="Shared/fuelux_003.js"></script>
+<script src="Shared/fuelux.js"></script>
+<script src="Shared/fuelux_002.js"></script>
+<script src="Shared/jquery_003.js"></script>
+<script src="Shared/additional-methods.js"></script>
+<script src="Shared/bootbox.js"></script>
+<script src="Shared/jquery_002.js"></script>
+<script src="Shared/jquery_004.js"></script>
+<script src="Shared/jquery_008.js"></script>
+<!--<script type="text/javascript" language="javascript" src="http://cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js"></script>-->
+
+<script src="Shared/jquery_010.js"></script>
+<script src="Shared/spin.js"></script>
+
+
+<!--
+<script src="https://subscription.maktabatulmadinah.com/public_html/assets/js/bootstrap-datetimepicker1.js"></script>
+<script src="https://subscription.maktabatulmadinah.com/public_html/assets/js/bootstrap-datetimepicker1.min.js"></script>
+-->
+
+<!-- ace scripts -->
+
+<script src="Shared/ace-elements.js"></script>
+<script src="Shared/ace.js"></script>
+
+<script src="Shared/webcam.js"></script>
+<script src="Shared/script.js"></script>
+<script type="text/javascript">
+    //    jQuery(function($)
+
+    $(document).ready(function () {
+
+        var today = new Date();
+        $('.date-picker').datepicker({
+            autoclose: true,
+            //startDate: '01-01-2010',
+            //endDate: today,
+
+        }).next().on(ace.click_event, function () {
+            $(this).prev().focus();
+        });
+        var countDownDate = new Date("Jan 22, 2019 21:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Output the result in an element with id="demo"
+  document.getElementById("timer-id").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("timer-id").innerHTML = "EXPIRED";
+}
+ document.getElementById("timer-id1").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("timer-id1").innerHTML = "EXPIRED";
+}
+document.getElementById("timer-id2").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("timer-id2").innerHTML = "EXPIRED";
+}
+document.getElementById("timer-id3").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("timer-id3").innerHTML = "EXPIRED";
+}
+}, 1000);
+$('.date-picker-hierarchy').datepicker({autoclose: true});
+
+        //$('body').addClass("rtl");
+        //$('#ace-settings-rtl').prop('selected', true);
+
+        /*  $('.dialogs,.comments').slimScroll({
+                        height: '300px'
+                    }); */
+                });
+            </script>
+            <!-- Dropdown JS -->
+            <script src="Shared/chosen.js"></script>
+
+
+            <!-- Date Picker-->
+            <script src="Shared/bootstrap-datepicker.js"></script>
+
+            <script src="Shared/jquery_011.js"></script>
+            <!--  <script src="https://subscription.maktabatulmadinah.com/public_html/assets/js/jquery.cookie.js"></script>-->
+
+            <!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.16/datatables.min.css"/> -->
+
+            <!-- <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.16/datatables.min.js"></script> -->
+
+            <script type="text/javascript">
+                function loadingPage() {
+                    $.blockUI();
+                }
+                $(document).ajaxStart($.blockUI);
+                $(document).ajaxStop($.unblockUI);
+            </script>
+            <!-- inline scripts related to this page -->
+            <script type="text/javascript">
+                jQuery(function($) 
+                {
+
+
+
+                    $('.back').on('click',function(){
+                        var r = confirm("are you realy sure you are not ordering?");
+                        var profile_code = $(this).attr('profile-code');
+                        if (r == true) {
+                           window.location.href = "https://subscription.maktabatulmadinah.com/Form/customer_action/profile_id/"+profile_code;
+                       } else {
+                           false;
+                       }
+                   });
+
+                    $('.confirm').on('click',function(){
+                        var r = confirm("Are you sure for confirming your order");
+                // var profile_code = $(this).attr('profile-code');
+                if (r == true) {
+                   window.location.href = "https://subscription.maktabatulmadinah.com/Form/customer_command";
+               } else {
+                   false;
+               }
+           });
+
+
+
+                    var sor_count = $('#column_count').val();  
+                    var sorting_arr = [];
+                    for(var sort = 0; sort <= sor_count; sort++)
+                    { 
+                        sorting_arr = {'bSortable':true}; 
+                    } 
+            //console.log(sorting_arr);
+
+                            //  function checkLength(el) {
+                            //   if (el.value.length != 6) {
+                            //     alert("length must be exactly 6 characters")
+                            //   }
+                            // }
+
+
+
+
+
+                            $(".filter_distribution_point").click(function(){
+
+                                var json = {};
+                                json['country_id'] = $("#country_id").val();
+                                json['state_id'] = $("#state_id").val();
+                                json['city_id'] = $("#city_id").val();
+                                json['name'] = $("#name").val();
+                                var request = $.ajax({
+                                    url: "https://subscription.maktabatulmadinah.com/Form/get_distribution_point_list",
+                                    type: "POST",
+                                    data: json,
+                                    dataType: "html",
+                                    success : function(_return)
+                                    {
+                        //console.log(_return);
+                        $('#filter_result_distribution_point').html(_return); 
+                        // $(".location_change").change();
+                    }
+                });  
+                            }); 
+
+                            $('#name').keypress(function(event)
+                            {
+                                if(event.keyCode == 13)
+                                {
+                                    $('.filter_distribution_point').click();
+                                    event.preventDefault();
+                                    return false;
+                                }
+                            });
+
+
+
+
+
+
+            //Payment Receiving Js
+            $(document).on('click','.checkbox_customer_payment',function()
+            {
+                    //$('#checkbox_customer').prop('checked',false);
+                    if($(this).prop('checked') == true)
+                    {
+                        $(".payment_receiving_submit").attr("disabled",false);
+                    }
+                    else
+                    {
+                        $(".payment_receiving_submit").attr("disabled",true);
+                    }
+                    
+                });
+            
+
+            // $(".submit_profile").click(function()
+            // {
+
+            //     var json = {};
+            //     var don = "Your data inserted Successsfully";
+            //     var request = $.ajax({
+            //         url: "https://subscription.maktabatulmadinah.com/Form/migrate_customer_command",
+            //         type: "POST",
+            //         data: json,
+            //         dataType: "html",
+            //         success : function()
+            //         {
+            //            window.location.replace("https://subscription.maktabatulmadinah.com/Form/customer_migration_profile");
+            //           // $(".location_change").change();
+            //         }
+            //     }); 
+            //     // }
+
+            // }); 
+
+            //Recent SMS Js
+            $(document).on('click','.checkbox_sms_customer',function()
+            {
+                    //$('#checkbox_customer').prop('checked',false);
+                    if($(this).prop('checked') == true)
+                    {
+                        $(".payment_sms_submit").attr("disabled",false);
+                        $(".sms_type").attr("disabled",false);
+                        
+                    }
+                    else
+                    {
+                        $(".payment_sms_submit").attr("disabled",true);
+                        $(".sms_type").attr("disabled",true);
+                    }
+                    
+
+                });
+
+            // On change courier type message show about sheet pattern...
+            $(".sltc_cor").on("change", function () {
+                //alert($(this).val());
+                if($(this).val() == "")
+                {
+                    $(".note_msg").html("Note: Please select courier type if you want to import your data.");
+                    $(".search_dispatch").prop('disabled', true);
+                    $("#upload_size_error").html("");
+                }
+                if($(this).val() == "tcs")
+                {
+                    $(".note_msg").html("Note: Your file format should be contain this column: cnsg_no, cnsgee_addr2, refno and cnsgee_addr3.");
+                    $(".search_dispatch").prop('disabled', false);
+                    $("#upload_size_error").html("");
+                }
+                if($(this).val() == "ocs")
+                {
+                    $(".note_msg").html("Note: Your file format should be contain this column: consignment no, trans ref, refno and phone no.");
+                    $(".search_dispatch").prop('disabled', false);
+                    $("#upload_size_error").html("");
+                }
+                if($(this).val() == "ums")
+                {
+                    $(".note_msg").html("Note: Your file format should be contain this column: consignment no, trans ref, refno and phone no.");
+                    $(".search_dispatch").prop('disabled', false);
+                    $("#upload_size_error").html("");
+                }
+                if($(this).val() == "fcs")
+                {
+                    $(".note_msg").html("Note: Your file format should be contain this column: barcode, transref and phone.");
+                    $(".search_dispatch").prop('disabled', false);
+                    $("#upload_size_error").html("");
+                }
+            });
+            
+            //Packaging Checkbox Select
+            $(document).on('click','.count_quantity',function()
+            {
+                var balance_quantity  =   $('#balance_qty').val();
+                $('#ckbCheckAll').prop('checked',false);
+                if(balance_quantity < 1)
+                {
+                    $('.count_quantity').prop('checked',false);
+                    $.gritter.add({
+                        // (string | mandatory) the heading of the notification
+                        title: 'Balance Required!',
+                        // (string | mandatory) the text inside the notification
+                        text: ' Balance Required For this Product!',
+                        class_name: 'gritter-danger  gritter-light'
+                    }); 
+                    $('.btn-validate').prop('disabled',true);
+
+                }   else{
+                    $('#pax_segment').val('')
+                    var count_check_quantity =0;
+                    $('.count_quantity').each(function(){
+                        //                    var 
+                        if($(this).prop('checked') == true)
+                        {
+                            var __pax_id      =  $(this).attr('id');
+                            var pax_id        = __pax_id.split('checkbox_');
+                            var pax_segment   = $('#pax_segment').val();
+                            var new_pax_segment = pax_segment + '_'+pax_id[1]+'';
+                            $('#pax_segment').val(new_pax_segment);
+                            var noofcopy      =  parseInt($('#noofcopy_'+pax_id[1]).val());
+                            count_check_quantity = count_check_quantity +  parseInt(noofcopy);
+                        }
+
+                    });
+                    $('#selected_qty').val(count_check_quantity);
+
+                    var selected_quantity = count_check_quantity;   
+
+
+                    if(selected_quantity > balance_quantity)
+                    {
+                        if($('.btn-validate').prop('disabled') == false){
+                            $.gritter.add({
+                                // (string | mandatory) the heading of the notification
+                                title: 'Balance Exceeds!',
+                                // (string | mandatory) the text inside the notification
+                                text: ' Selected Quantity Exceeds From Balance Quantity Your Transaction Can not be Completed !',
+                                class_name: 'gritter-danger  gritter-light'
+                            }); 
+                            $('.count_quantity').prop('checked',false);
+                            $('#ckbCheckAll').prop('checked',false);
+                            $('.btn-validate').prop('disabled',true);
+                        } 
+
+                    }else
+                    {
+                        var remaining_quantity = balance_quantity  - selected_quantity;
+                        $('#remaning_qty').val(remaining_quantity);
+                        $('.btn-validate').prop('disabled',false); 
+                    }
+
+                }
+                // if(count_check_quantity > 0)
+                //               {
+                //                       alert(count_check_quantity);
+                //               }
+
+            });    
+            
+            
+            //Dispatch List  Check Box          
+            $(document).on('click','.ckbCheckAllDispatch',function()
+            {
+                if($(".ckbCheckAllDispatch").prop('checked') == true)
+                {
+                    $(".dispatch_quantity").prop('checked', true);
+                    $(".dispatch_sub").prop('disabled',false);
+                }
+                else
+                {
+                    $(".dispatch_quantity").prop('checked', false);
+                    $(".dispatch_sub").prop('disabled',true);
+                }
+            });
+            
+            $(document).on('click','.dispatch_quantity',function()
+            {
+              var abc = $(this).is(":checked");
+
+              if(abc == true){
+                $(".dispatch_sub").prop('disabled',false);
+            }
+            else if(abc == false){
+                $(".dispatch_sub").prop('disabled',true);
+
+            }
+
+                // if($(".dispatch_quantity").prop('checked') == true)
+    //             {
+
+    //                 $(".dispatch_sub").prop('disabled',false);
+
+                // }
+                // else
+                // {
+    //                 $(".dispatch_sub").prop('disabled',true);
+                // }
+                
+            });
+
+            // var oTable1 = $('#customer_table').dataTable();
+
+
+            var oTable1 = $('#sample-table-2').dataTable( 
+            {
+                "aoColumns": 
+                [
+                { "bSortable": true }, 
+                { "bSortable": true }, 
+                { "bSortable": true }, 
+                { "bSortable": true },
+                { "bSortable": false }
+                ] 
+            });
+            var oTable1 = $('#distribution_table').dataTable( 
+            {
+                "aoColumns": 
+                [
+                { "bSortable": true },
+                null,null,null,null,
+                { "bSortable": false }
+                ],
+                "aLengthMenu": [10, 25, 50, 100, 250, 500]
+            });
+            var oTable1 = $('#mailing_table').dataTable( 
+            {
+                "aoColumns": 
+                [
+                { "bSortable": true },
+                null,null,null,null,
+                { "bSortable": false }
+                ] 
+            });
+
+            var oTable2 = $('#sample-table-3').dataTable( 
+            {
+                "aoColumns": 
+                [
+                { "bSortable": true },
+                null,null,null,null,null,null,
+                { "bSortable": false }
+                ] 
+            });
+
+            var oTable3 = $('#sample-table-4').dataTable( 
+            {
+                "aoColumns": 
+                [
+                { "bSortable": true },
+                null,null,null,null,null,
+                { "bSortable": false }
+                ] 
+            });
+
+            var oTable4 = $('#sample-table-5').dataTable( 
+            {
+                "aoColumns": 
+                [
+                { "bSortable": true },
+                null,null,null,null,
+                { "bSortable": false }
+                ] 
+            });
+            $('[data-rel="tooltip"]').tooltip({placement: tooltip_placement});
+            function tooltip_placement(context, source) 
+            {
+                var $source = $(source);
+                var $parent = $source.closest('table')
+                var off1 = $parent.offset();
+                var w1 = $parent.width();
+                var off2 = $source.offset();
+                var w2 = $source.width();
+                if( parseInt(off2.left) < parseInt(off1.left) + parseInt(w1 / 2) ) return 'right';
+                return 'left';
+            }
+
+            $('.column_1').hide();  
+            $('.column_2').hide();  
+            $('.lawahqeen').hide();  
+            $('.other').hide(); 
+            //Show State 
+            $('#country_id').change(function()
+            {
+                var json             = {};
+                json['country_id']   = $(this).val();
+                var request = $.ajax(
+                {
+                    url: "https://subscription.maktabatulmadinah.com/Hierarchy/get_state_byid",
+                    type: "POST",
+                    data: json,
+                    dataType: "html",
+                    beforeSend : function()
+                    {
+                        $('.icon-spinner').removeClass('hide');   
+                    }
+                    ,
+                    success : function(_return)
+                    {
+                        $('#state_id').html(_return);
+                        $(".city_get").change();
+
+                                // Clear previous search list on packaging list page.
+                                $('.packaging_search_result_list').html('');
+
+                            },
+                            complete: function ()
+                            {
+                                $('.icon-spinner').addClass('hide');      
+                            }
+                        });
+            });
+
+            //Distribution Product Change
+            $(".product_change").change(function()
+            {
+                $(".location_change").change();
+            }); 
+
+            //Distribution Location change
+            $(".location_change").change(function(){
+
+                var json = {};
+                json['product_id']  = $('#product_id').val();
+                json['location_id'] = $(this).val();
+                var request = $.ajax({
+                    url: "https://subscription.maktabatulmadinah.com/Form/get_balance_by_product",
+                    type: "POST",
+                    data: json,
+                    dataType: "html",
+
+                    success : function(_return)
+                    {
+                        //console.log(_return);
+                        $('#balance_qty').val(_return); 
+                        $('#seleted_qty').val(_return); 
+                        $('#balance_qty').val(_return); 
+
+                        // Clear previous search list on packaging list page.
+                        $('.packaging_search_result_list').html('');
+                    }
+                });  
+
+            }); 
+            
+            
+            //Distribution Button Click
+            $(".search_distribution").click(function()
+            {
+                //alert('yes');
+                var json = {};
+                json['country_id']       = $("#country_id").val();
+                json['state_id']         = $("#state_id").val();
+                json['city_id']          = $("#city_id").val();
+                json['area_id']          = $("#area_id").val();
+                json['kabinat_id']       = $("#kabinat_id").val();
+                json['kabina_id']        = $("#kabina_id").val();
+                json['product_id']       = $("#product_id").val();
+                json['location_id']      = $("#location_id").val();
+                json['courier']          = $("#courier").val();
+                json['tanzimi_zimadari'] = $("#tanzimi_zimadari").val();
+                json['department_id']    = $("#department_id").val();
+                json['customer_type']    = $("#customer_type").val();
+                var request = $.ajax({
+
+                    url: "https://subscription.maktabatulmadinah.com/Form/get_customer_by_distribution",
+                    type: "POST",
+                    data: json,
+                    dataType: "html",
+
+                    success : function(_return)
+                    {
+                        //console.log(_return);
+                        $('.sample-table-2').html(_return); 
+                        // $(".location_change").change();
+                    }
+                });  
+
+            }); 
+            
+            //Trans Code Mailing Search
+            $(".trans_code_mailing").change(function()
+            {
+
+                var json = {};
+                json['trans_code'] = $("#trans_code").val();
+               // json['date_mailing'] = $("#date_mailing").val();
+               // json['product_id'] = $("#product_id").val();
+               // json['location_id'] = $("#location_id").val();
+               var request = $.ajax({
+                url: "https://subscription.maktabatulmadinah.com/Form/get_customer_packet_list",
+                type: "POST",
+                data: json,
+                dataType: "html",
+
+                success : function(_return)
+                {
+                    if(_return != 0)
+                    {
+                        $('#mailing_product_result').html(_return); 
+                    }
+                    else
+                    {
+                        $('#mailing_product_result').html(''); 
+                    }                       
+                }
+            });                 
+
+           });
+
+            //Mailing List Js 
+            $(".search_mailing").click(function()
+            {
+                if($("#trans_code").val() == "")
+                {  
+                    $.gritter.add({
+                        // (string | mandatory) the heading of the notification
+                        title: 'Error!',
+                        // (string | mandatory) the text inside the notification
+                        text: 'Please select any field',
+                        class_name: 'gritter-danger  gritter-light'
+                    });   
+                }
+                else
+                {
+
+                //alert('yes');
+                var json = {};
+                json['trans_code'] = $("#trans_code").val();
+               // json['date_mailing'] = $("#date_mailing").val();
+               // json['product_id'] = $("#product_id").val();
+               // json['location_id'] = $("#location_id").val();
+               var request = $.ajax({
+                url: "https://subscription.maktabatulmadinah.com/Form/get_customer_mailing_list",
+                type: "POST",
+                data: json,
+                dataType: "html",
+
+                success : function(_return)
+                {
+                        //console.log(_return);
+                        $('#mailing_result').html(_return); 
+                        // $(".location_change").change();
+                    }
+                });  
+           }
+
+       });     
+
+
+///////////////////////////allocate dispatch customers-------------------------
+   //Dispatch List Js 
+   $(".search_allocate_dispatch").click(function()
+   {
+    if($("#trans_code").val() == "")
+    {  
+        $.gritter.add({
+                        // (string | mandatory) the heading of the notification
+                        title: 'Error!',
+                        // (string | mandatory) the text inside the notification
+                        text: 'Please select any field',
+                        class_name: 'gritter-danger  gritter-light'
+                    });   
+    }
+    else
+    {
+                //alert('yes');
+                var json = {};
+                json['trans_code'] = $("#trans_code").val();            
+                json['other'] = $("#other").val();
+                
+                var request = $.ajax({
+                    url: "https://subscription.maktabatulmadinah.com/Form/get_allocate_customer_dispatch_list",
+                    type: "POST",
+                    data: json,
+                    dataType: "html",
+
+                    success : function(_return)
+                    {
+                        //console.log(_return);
+                        $('#dispatch_allocate_result').html(_return); 
+                        // $(".location_change").change();
+                    }
+                }); 
+            }
+
+        }); 
+            ////////////////////////////////end here
+
+
+
+
+
+
+
+
+
+
+
+            
+             //search_packaging List Js 
+             $(".search_packaging").click(function()
+             {
+                if($("#trans_code").val() == "")
+                {  
+                    $.gritter.add({
+                        // (string | mandatory) the heading of the notification
+                        title: 'Error!',
+                        // (string | mandatory) the text inside the notification
+                        text: 'Please select any field',
+                        class_name: 'gritter-danger  gritter-light'
+                    });   
+                }
+                else
+                {
+
+                //alert('yes');
+                var json = {};
+                json['trans_code'] = $("#trans_code").val();
+               // json['date_mailing'] = $("#date_mailing").val();
+               // json['product_id'] = $("#product_id").val();
+               // json['location_id'] = $("#location_id").val();
+               var request = $.ajax({
+                url: "https://subscription.maktabatulmadinah.com/Form/get_customer_reverse_packaging_list",
+                type: "POST",
+                data: json,
+                dataType: "html",
+
+                success : function(_return)
+                {
+                        //console.log(_return);
+                        $('#packaging_result').html(_return); 
+                        // $(".location_change").change();
+                    }
+                });  
+           }
+
+       });
+
+            //Reverse Packaging Lsit
+            $(".reverse_packaging").click(function()
+            {
+             var optsel = window.confirm("Do you want to reverse packaging?");
+             if (optsel == true)
+             {
+                $("#reverse_packaging_submit").submit();
+            }
+        });
+            
+            //Dispatch List Js 
+            $(".trans_code_dispatch").change(function()
+            {
+                //alert('yes');
+                var json = {};
+                json['trans_code'] = $("#trans_code").val();
+                json['other'] = $('#other').val();
+                var request = $.ajax({
+                    url: "https://subscription.maktabatulmadinah.com/Form/get_customer_dispatch_result",
+                    type: "POST",
+                    data: json,
+                    dataType: "html",
+
+                    success : function(_return)
+                    {
+                        if(_return != 0)
+                        {
+                            $('#dispatch_product_result').html(_return); 
+                        }
+                        else
+                        {
+                            $('#dispatch_product_result').html(''); 
+                        }                       
+                    }
+                });
+            }); 
+            
+            
+            //Dispatch List Js 
+            $(".search_dispatch").click(function()
+            {
+                if($("#trans_code").val() == "")
+                {
+                    $.gritter.add({
+                    // (string | mandatory) the heading of the notification
+                    title: 'Error!',
+                    // (string | mandatory) the text inside the notification
+                    text: 'Please select any field',
+                    class_name: 'gritter-danger  gritter-light'
+                });
+                }
+                else
+                {
+                //alert('yes');
+                var json = {};
+                json['trans_code'] = $("#trans_code").val();
+                var request = $.ajax({
+                    url: "https://subscription.maktabatulmadinah.com/Form/get_customer_dispatch_list",
+                    type: "POST",
+                    data: json,
+                    dataType: "html",
+
+                    success : function(_return)
+                    {
+                        //console.log(_return);
+                        $('#dispatch_result').html(_return);
+                        // $(".location_change").change();
+                    }
+                });
+            }
+
+        });
+
+            $(".btn_submit_disptach_list").click(function(event)
+            {
+            /*var file_Name = $('input[type=file]')[0].files[0].name;
+            var courier_Type = $(".sltc_cor").val();
+            console.log(file_Name);*/
+
+            if($(".sltc_cor").val() == "")
+            {
+                //alert("if");
+                $("#upload_size_error").html("Alert: Please select a courier type.");
+                event.preventDefault();
+                return false;
+            }
+            else{
+                //alert("else");
+                $("#upload_size_error").html("");
+            }
+
+        });
+            
+            
+            //Dispatch List Js 
+            $(".trans_code_import_export").change(function()
+            {
+                //alert('yes');
+                var json = {};
+                json['trans_code'] = $("#trans_code").val();
+                var request = $.ajax({
+                    url: "https://subscription.maktabatulmadinah.com/Form/get_customer_import_export_result",
+                    type: "POST",
+                    data: json,
+                    dataType: "html",
+
+                    success : function(_return)
+                    {
+                        //console.log(_return);
+                        if(_return != 0)
+                        {
+                            $('#dispatch_import_export_result').html(_return); 
+                        }
+                        else
+                        {
+                            $('#dispatch_import_export_result').html(''); 
+                        }
+                        //console.log(_return);
+                        
+                        // $(".location_change").change();
+                    }
+                });
+            });
+
+          //Dispatch List Js 
+          $("#trans_code_package").change(function()
+          {
+                //alert('yes');
+                var json = {};
+                json['trans_code'] = $("#trans_code_package").val();
+                var request = $.ajax({
+                    url: "https://subscription.maktabatulmadinah.com/Form/get_export_packaging_detail",
+                    type: "POST",
+                    data: json,
+                    dataType: "html",
+
+                    success : function(_return)
+                    {
+                        //console.log(_return);
+                        if(_return != 0)
+                        {
+                            $('#package_import_export_result').html(_return); 
+                        }
+                        else
+                        {
+                            $('#package_import_export_result').html(''); 
+                        }
+                        //console.log(_return);
+                        
+                        // $(".location_change").change();
+                    }
+                });
+            });
+
+
+            //Customer List
+            $(".filter_customer").click(function(){
+                //alert('yes');
+                var json = {};
+                json['country_id'] = $("#country_id").val();
+                json['state_id'] = $("#state_id").val();
+                json['city_id'] = $("#city_id").val();
+                json['area_id'] = $("#area_id").val();
+                json['cell_code'] = $("#cell_code").val();
+                json['p_cell_code'] = $("#p_cell_code").val();
+                json['p_cell_no'] = $("#p_cell_no").val();
+                var request = $.ajax({
+                    url: "https://subscription.maktabatulmadinah.com/Form/get_customer_list",
+                    type: "POST",
+                    data: json,
+                    dataType: "html",
+
+                    success : function(_return)
+                    {
+                        //console.log(_return);
+                        $('#filter_result_customer').html(_return); 
+                        // $(".location_change").change();
+                    }
+                });  
+
+            }); 
+
+
+            $(".filter_customer_expire").click(function(){
+                var json = {};
+                json['country_id'] = $("#country_id").val();
+                json['state_id'] = $("#state_id").val();
+                json['city_id'] = $("#city_id").val();
+                json['area_id'] = $("#area_id").val();
+                json['disp_month'] = $("#disp_month").val();
+                // json['month_id'] = $("#month_id").val();
+                // json['year_id'] = $("#year_id").val();
+                // json['cell_code'] = $("#cell_code").val();
+                // json['p_cell_code'] = $("#p_cell_code").val();
+                // json['p_cell_no'] = $("#p_cell_no").val();
+                var request = $.ajax({
+                    url: "https://subscription.maktabatulmadinah.com/Form/get_customer_expire_list",
+                    type: "POST",
+                    data: json,
+                    dataType: "html",
+                    success : function(_return)
+                    {
+                        //console.log(_return);
+                        $('#filter_result_customer_expire').html(_return); 
+                        // $(".location_change").change();
+                    }
+                });  
+
+            }); 
+          // $(".filter_customer_expire").click(function(){
+          //       var json = {};
+          //       json['country_id'] = $("#country_id").val();
+          //       json['state_id'] = $("#state_id").val();
+          //       json['city_id'] = $("#city_id").val();
+          //       json['area_id'] = $("#area_id").val();
+          //       json['disp_month'] = $("#disp_month").val();
+          //       // json['month_id'] = $("#month_id").val();
+          //       // json['year_id'] = $("#year_id").val();
+          //       // json['cell_code'] = $("#cell_code").val();
+          //       // json['p_cell_code'] = $("#p_cell_code").val();
+          //       // json['p_cell_no'] = $("#p_cell_no").val();
+          //       var request = $.ajax({
+          //           url: "https://subscription.maktabatulmadinah.com/Form/ajaxDataTable",
+          //           type: "POST",
+          //           data: json,
+          //           dataType: "html",
+          //              success : function(_return)
+          //           {
+          //               //console.log(_return);
+          //               $('#filter_result_customer_expire').html(_return); 
+          //               // $(".location_change").change();
+          //           }
+          //       });  
+
+          //   }); 
+
+          // $('#limit').click(function(){
+          //   alert($(this).attr("value"));
+          // })
+
+
+
+
+            /* $("#ckbCheckAll").click(function () 
+            {
+            console.log("YES");
+            $(".checkBoxClass").prop('checked', true);
+        }); */
+
+
+
+            //select all checkboxes
+            $(document).on('click','#select_all_mailing',function()
+            {
+                if($("#select_all_mailing").prop('checked') == true)
+                {
+                    $(".checkbox").prop('checked', true);
+                }
+                else
+                {
+                    $(".checkbox").prop('checked', false);
+                }
+            });
+            
+           /* $(document).on('click','.checkbox',function()
+            {
+                if($(".checkbox").prop('checked') == false)
+                {
+                    $("#select_all_mailing")[0].checked = false; //change "select all" checked status to false
+                }
+                else
+                {
+                    if ($('.checkbox:checked').length == $('.checkbox').length ){
+                        $("#select_all_mailing")[0].checked = true; //change "select all" checked status to true
+                    }
+                }
+            });*/
+            
+            
+            /* $("#select_all_mailing").change(function(){  //"select all" change 
+            var status = this.checked; // "select all" checked status
+            $('.checkbox').each(function(){ //iterate all listed checkbox items
+            this.checked = status; //change ".checkbox" checked status
+            });
+            });
+
+            $('.checkbox').change(function(){ //".checkbox" change 
+            //uncheck "select all", if one of the listed checkbox item is unchecked
+            if(this.checked == false){ //if this item is unchecked
+            $("#select_all_mailing")[0].checked = false; //change "select all" checked status to false
+            }
+
+            //check "select all" if all checkbox items are checked
+            if ($('.checkbox:checked').length == $('.checkbox').length ){ 
+            $("#select_all_mailing")[0].checked = true; //change "select all" checked status to true
+            }
+        }); */
+
+///////////////////////////////////////////////////New Method for migration//////////////////////////////////////
+$('.get_migrate').change(function(){
+   var migrate = $(this).val(); 
+   $('.btn_migrate').html(migrate);                                                         
+});
+////////////////////////////////////////////////end New Method///////////////////////////////////
+
+
+
+$(".state_get").change(function(){
+
+    var json = {};
+    json['country_id'] = $(this).val();
+    var request = $.ajax({
+        url: "https://subscription.maktabatulmadinah.com/Hierarchy/get_state_byid",
+        type: "POST",
+        data: json,
+        dataType: "html",
+
+        success : function(_return)
+        {
+                        //console.log(_return);
+                        $('.state_id').html(_return); 
+                    }
+                });  
+
+});
+            //Shipping Address Checked
+            $("#shipping_address").change(function()
+            {
+                var postal_address = $("#paddress").val();
+                    //alert("YES");
+
+                    if($(this).prop('checked') == true) 
+                    {
+                        $("#saddress").val(postal_address);
+                        //console.log(postal_address);
+                    }
+                    else
+                    {
+                        $("#saddress").val('');
+                    }       
+                });    
+
+            //City Get
+            $(".city_get").change(function(){
+
+                var json = {};
+                
+                json['country_id'] = $("#country_id").val();
+                
+                json['state_id'] = $(this).val();
+
+                var request = $.ajax({
+                    url: "https://subscription.maktabatulmadinah.com/Hierarchy/get_state_city_byid",
+                    type: "POST",
+                    data: json,
+                    dataType: "html",
+
+                    success : function(_return)
+                    {
+                        //console.log(_return);
+                        $('.city_id').html(_return);
+
+                        // Clear previous search list on packaging list page.
+                        $('.packaging_search_result_list').html('');
+                    }
+                });  
+
+            });
+            //Area Get
+            $(".area_get").change(function(){
+
+                var json = {};
+
+                json['city_id'] = $(this).val();
+                json['add_customer'] = $('#add_customer').val();
+
+                var request = $.ajax({
+                    url: "https://subscription.maktabatulmadinah.com/Hierarchy/get_area_byid",
+                    type: "POST",
+                    data: json,
+                    dataType: "html",
+
+                    success : function(_return)
+                    {
+                        //console.log(_return);
+                        $('.area_id').html(_return); 
+                    }
+                });  
+
+            });
+            
+            // $(".kabinat_area_get").change(function(){
+            //     var json = {};
+
+            //     json['area_id'] = $(this).val();
+
+            //         var request = $.ajax({
+            //         url: "https://subscription.maktabatulmadinah.com/Hierarchy/get_kabinat_byid",
+            //         type: "POST",
+            //         data: json,
+            //         dataType: "html",
+
+            //         success : function(_return)
+            //         {
+            //             //console.log(_return);
+            //             $('.kabinat_id').html(_return); 
+            //         }
+            //     });
+
+            // });
+            $(document).on("change",".country_id",function(e){     
+
+                var json = {};
+                
+                json['country_id'] = $(this).val();
+                // json['add_customer'] = $('#add_customer').val();
+
+                var request = $.ajax({
+                    url: "https://subscription.maktabatulmadinah.com/Hierarchy/get_kabinat_byid",
+                    type: "POST",
+                    data: json,
+                    dataType: "html",
+
+                    success : function(_return)
+                    {
+                        //console.log(_return);
+                        $('.kabinat_id').html(_return); 
+                    }
+                });  
+
+            });
+
+            $(document).on("change",".get_kabinat_byarea",function(e){     
+                var json = {};
+                json['country_id'] = $("#country_id").val();
+                json['area_id'] = $(this).val();
+                json['customer_order'] = $('#customer_order').val();
+
+                // // json['add_customer'] = $('#add_customer').val();
+                // alert(json['area_id']= $(this).val());
+                var request = $.ajax({
+                    url: "https://subscription.maktabatulmadinah.com/Hierarchy/get_kabinat_byid",
+                    type: "POST",
+                    data: json,
+                    dataType: "html",
+
+                    success : function(_return)
+                    {
+                        //console.log(_return);
+                        $('.kabinat_id').html(_return); 
+                    }
+                });  
+
+            });
+            $(document).on("change",".get_kabina_byarea",function(e){     
+                // alert();
+                
+                var json = {};
+                json['country_id'] = $("#country_id").val();
+                json['area_id'] = $(this).val();
+                json['customer_order'] = $('#customer_order').val();
+                
+                // // json['add_customer'] = $('#add_customer').val();
+                // alert(json['area_id']= $(this).val());
+                var request = $.ajax({
+                    url: "https://subscription.maktabatulmadinah.com/Hierarchy/get_kabina_byid",
+                    type: "POST",
+                    data: json,
+                    dataType: "html",
+
+                    success : function(_return)
+                    {
+                        //console.log(_return);
+                        $('.kabina_id').html(_return); 
+                    }
+                });  
+
+            });
+
+
+            $(document).on("change",".kabina_get",function(e){     
+
+                var json = {};
+                
+                json['area_id'] = $('#area_id').val();
+                json['kabinat_id'] = $('#kabinat_id').val();
+
+                // json['add_customer'] = $('#add_customer').val();
+                // alert(json['kabinat_id']);
+
+                var request = $.ajax({
+                    url: "https://subscription.maktabatulmadinah.com/Hierarchy/get_kabina_byid",
+                    type: "POST",
+                    data: json,
+                    dataType: "html",
+
+                    success : function(_return)
+                    {
+                        //console.log(_return);
+                        $('.kabina_id').html(_return); 
+                    }
+                });  
+
+            });
+
+
+
+            $(document).ready(function(){
+                $('#courier').change(function(){
+                    if($(this).val() == "fcs"){
+                        $('#raider_name').show();
+                    }else{
+                        $('#raider_name').hide();
+                    }
+                });
+
+
+            });
+
+            $(document).ready(function()
+            {
+             $("#area_id").change(function()
+             {
+              if($(this).val() == "Other")
+              {
+               $("#add_area").show(500);
+           }
+           else
+           {
+               $("#add_area").hide(500);
+           }
+       });
+             $("#add_area").hide();
+         });
+
+            //Check USer NAme Unique
+
+            $('#username').blur(function(){
+                var json = {};
+                json['username'] = $('#username').val();
+                json['id']       = $('#login_id').val();
+                var request = $.ajax({
+                    url: "https://subscription.maktabatulmadinah.com/Form/check_user_exists",
+                    type: "POST",
+                    data: json,
+                    dataType: "json",
+
+                    success : function(_return)
+                    {
+                        if(_return['_return'] > 0)
+                        {
+                            $('input[name="username"]').rules('add', {
+                                equalTo:'1',
+                                messages:   {
+                                    equalTo: ' User Name Already Exists can not be created again.'
+                                }
+                            });
+                            // trigger immediate validation to update message
+                            $('input[name="username"]').valid();
+                            $('input[name="username"]').rules('remove','equalTo');
+
+                            var old_username = $('input[name="username"]').attr('old-username');
+                            if(old_username != null)
+                            {
+                                $('input[name="username"]').val(old_username);  
+                            }else
+                            {
+                                $('input[name="username"]').val(''); 
+                            }
+
+                        }  
+                    }
+                });
+            });  
+
+
+            //Check Email Unique
+
+            $('#email').blur(function(){
+                var json = {};
+                json['email'] = $('#email').val();
+                json['id']       = $('#login_id').val();
+                var request = $.ajax({
+                    url: "https://subscription.maktabatulmadinah.com/Form/check_email_exists",
+                    type: "POST",
+                    data: json,
+                    dataType: "json",
+
+                    success : function(_return)
+                    {
+                        if(_return['_return'] > 0)
+                        {
+                            $('input[name="email"]').rules('add', {
+                                equalTo:'1',
+                                messages:   {
+                                    equalTo: ' Email Already Exists can not be created again.'
+                                }
+                            });
+                            // trigger immediate validation to update message
+                            $('input[name="email"]').valid();
+                            $('input[name="email"]').rules('remove','equalTo');
+
+                            var old_email = $('input[name="email"]').attr('old-email');
+                            if(old_email != null)
+                            {
+                                $('input[name="email"]').val(old_email);  
+                            }else
+                            {
+                                $('input[name="email"]').val(''); 
+                            }
+
+                        }  
+                    }
+                });
+            });  
+
+
+
+            //Check Phone No
+            $('#mobile_no_1').blur(function(){
+                var json = {};
+                json['mobile_no'] = $('#mobile_no').val();
+                json['id']       = $('#customer_id').val();
+                var request = $.ajax({
+                    url: "https://subscription.maktabatulmadinah.com/Form/check_phone_exists",
+                    type: "POST",
+                    data: json,
+                    dataType: "json",
+
+                    success : function(_return)
+                    {
+                        if(_return['_return'] > 0)
+                        {
+                            $('#mobile_no').rules('add', {
+                                equalTo:'1',
+                                messages:   {
+                                    equalTo: ' Phone No Already Exists can not be created again.'
+                                }
+                            });
+                            // trigger immediate validation to update message
+                            $('#mobile_no').valid();
+                            $('#mobile_no').rules('remove','equalTo');
+
+                            var old_phone = $('#mobile_no').attr('old-phone');
+                            if(old_phone != null)
+                            {
+                                $('#mobile_no').val(old_phone);  
+                            }else
+                            {
+                                $('#mobile_no').val(''); 
+                            }
+
+                        }  
+                    }
+                });
+            });  
+
+            //Category Change To show Price
+            $("#category_id").change(function()
+            {
+                /* if($("#dis_channel_id").val() != "")
+                { */
+                        /* /*  $.gritter.add({
+                        // (string | mandatory) the heading of the notification
+                        title: 'Error!',
+                        // (string | mandatory) the text inside the notification
+                        text: 'Please select Category.',
+                        class_name: 'gritter-success  gritter-light'
+                        }); 
+                        $("#category_id").val('');      
+                        $("#dis_channel_id").focus();       
+                        }
+                        else
+                            {  */
+                                var json = {};
+                                json['category_id'] = $("#category_id").val();
+                                json['dis_channel_id'] = $("#dis_channel_id").val();
+                                json['noc'] = $("#noc").val();
+                                var request = $.ajax
+                                ({
+                                    url: "https://subscription.maktabatulmadinah.com/Form/get_category_channel_list",
+                                    type: "POST",
+                                    data: json,
+                                    dataType: "json",
+
+                                    success : function(_return)
+                                    {
+                                        console.log(_return);
+                                        if(_return['total'] == 1)
+                                        {
+                                    //console.log("if");
+                                    $.gritter.add({
+                                        // (string | mandatory) the heading of the notification
+                                        title: 'Price Not Exists!',
+                                        // (string | mandatory) the text inside the notification
+                                        text: 'Price Not Exists.',
+                                        class_name: 'gritter-success  gritter-light'
+                                    });
+                                    $(".price_list").addClass('hide');
+                                    $(".total_price").addClass('hide');
+                                   // $("#dis_channel_id").val('');
+                                   // $("#dis_channel_id").focus();
+                               }
+                               else
+                               {
+                                    //console.log("else");
+                                    $(".price_list").removeClass('hide');
+                                    //console.log(_return);
+                                    $('#price').val(_return['price']); 
+
+                                    $(".total_price").removeClass('hide');
+                                    //console.log(_return);
+                                    $('#total_price').val(_return['total_price']); 
+
+                                }
+
+                            }
+                        });  
+                                /*  } */ 
+
+                            });
+
+
+
+
+///////////////////////////////////final inactive date
+$(document).on("change",".status2",function(e){
+
+    var _status = $(this).val();
+    var ref     = $(this).attr('ref'); 
+    var table   = $(this).attr('table'); 
+    if(_status == 0)
+    { 
+        $(this).val(1);
+        var status_new = 1; 
+        $(this).prop('checked',true);
+    }else
+    {
+        $(this).val(0);
+        var status_new = 0;
+        $(this).prop('checked',false);
+    }
+
+    if(ref != null)
+    {
+        var json = {};
+
+        json['id']       = ref;
+        json['status']   = status_new;
+        json['table']    = table;
+        var request = $.ajax({
+            url: "https://subscription.maktabatulmadinah.com/Form/change_user_status_inactivedate",
+            type: "POST",
+            data: json,
+            dataType: "json",
+
+            success : function(_return)
+            {
+                if(_return['_return'] > 0)
+                {
+                    var change_status_label = '';  
+                    switch(table) {
+                        case 'customer' :change_status_label = 'Customer'; break;     
+                        default: change_status_label = '';
+                    }
+
+
+
+                    $.gritter.add({
+                                        // (string | mandatory) the heading of the notification
+                                        title: 'Status Changed!',
+                                        // (string | mandatory) the text inside the notification
+                                        text: change_status_label+' Status Changed Successfully.',
+                                        class_name: 'gritter-success  gritter-light'
+                                    });
+
+                    return false;
+
+                }   
+            }
+        });
+    } 
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*   $(document).on("change",".status",function(e){
+
+                    var _status = $(this).val();
+                    var ref     = $(this).attr('ref'); 
+                    var table   = $(this).attr('table'); 
+                     if(_status == 0)
+                     { 
+                        $(this).val(1);
+                        var status_new = 1; 
+                        $(this).prop('checked',true);
+                     }else
+                     {
+                        $(this).val(0);
+                         var status_new = 0;
+                        $(this).prop('checked',false);
+                     }
+                     
+                    if(ref != null)
+                    {
+                        var json = {};
+                        
+                        json['id']       = ref;
+                        json['status']   = status_new;
+                        json['table']    = table;
+                        var request = $.ajax({
+                        url: "https://subscription.maktabatulmadinah.com/Form/change_user_status_h",
+                        type: "POST",
+                        data: json,
+                        dataType: "json",
+
+                            success : function(_return)
+                            {
+                                if(_return['_return'] > 0)
+                                  {
+                                    var change_status_label = '';  
+                                     switch(table) {
+                                    case 'customer' :change_status_label = 'Customer'; break;     
+                                    case 'distribution_point' :change_status_label = 'Distribution Point'; break;
+                                    default: change_status_label = '';
+                                     }
+
+                                     
+                                     
+                                    $.gritter.add({
+                                        // (string | mandatory) the heading of the notification
+                                        title: 'Status Changed!',
+                                        // (string | mandatory) the text inside the notification
+                                        text: change_status_label+' Status Changed Successfully.',
+                                        class_name: 'gritter-success  gritter-light'
+                                    });
+
+                                    return false;
+               
+                                  }   
+                            }
+                        });
+                    } 
+                });*/
+
+
+            //Category Change To show Price
+          /*   $("#dis_channel_id").change(function()
+                {
+                    if($("#category_id").val() == "")
+                    {
+                        $.gritter.add({
+                            // (string | mandatory) the heading of the notification
+                            title: 'Error!',
+                            // (string | mandatory) the text inside the notification
+                            text: 'Please select Category.',
+                            class_name: 'gritter-success  gritter-light'
+                        });
+                        $("#dis_channel_id").val('');       
+                        $("#category_id").focus();      
+                    }
+                    else if($("#dis_channel_id").val() == "")
+                    {
+                        $("#dis_channel_id").val('');
+                    }
+                    else
+                    {
+                        var json = {};
+                        json['category_id'] = $("#category_id").val();
+                        json['dis_channel_id'] = $("#dis_channel_id").val();
+                        json['noc'] = $("#noc").val();
+                        var request = $.ajax({
+                            url: "https://subscription.maktabatulmadinah.com/Form/get_category_channel_list",
+                            type: "POST",
+                            data: json,
+                            dataType: "json",
+
+                            success : function(_return)
+                            {
+                                if(_return['total'] == 1)
+                                {
+                                    $.gritter.add({
+                                        // (string | mandatory) the heading of the notification
+                                        title: 'Price Not Exists!',
+                                        // (string | mandatory) the text inside the notification
+                                        text: 'Price Not Exists.',
+                                        class_name: 'gritter-success  gritter-light'
+                                    });
+                                    $(".price_list").addClass('hide');
+                                    $(".total_price").addClass('hide');
+                                    $("#dis_channel_id").val('');
+                                    $("#dis_channel_id").focus();
+                                }
+                                else
+                                {
+                                    $(".price_list").removeClass('hide');
+                                    //console.log(_return);
+                                    $('#price').val(_return['price']); 
+
+                                    $(".total_price").removeClass('hide');
+                                    //console.log(_return);
+                                    $('#total_price').val(_return['total_price']); 
+
+                                }
+
+                            }
+                        });  
+                    }
+
+            });
+            */
+
+            //No of Copy Change To show Price
+            $("#noc").keyup(function()
+            {
+                if($("#noc").val() == 0)
+                {
+                    $.gritter.add({
+                            // (string | mandatory) the heading of the notification
+                            title: 'Error!',
+                            // (string | mandatory) the text inside the notification
+                            text: 'Please enter more than 1 copy.',
+                            class_name: 'gritter-success  gritter-light'
+                        }); 
+                    $(".price_list").addClass('hide');
+                    $(".total_price").addClass('hide');     
+                    $("#noc").val('');      
+                    $("#noc").focus();  
+
+
+                }
+                else if($("#noc").val() > 500)
+                {
+                    $.gritter.add({
+                            // (string | mandatory) the heading of the notification
+                            title: 'Error!',
+                            // (string | mandatory) the text inside the notification
+                            text: 'Please enter less than 500 copy.',
+                            class_name: 'gritter-success  gritter-light'
+                        }); 
+                    $(".price_list").addClass('hide');
+                    $(".total_price").addClass('hide');     
+                    $("#noc").val('');      
+                    $("#noc").focus();  
+
+
+                } 
+                else 
+                       // if($("#dis_channel_id").val() != "")
+                   {
+                            /* /*  $.gritter.add({
+                            // (string | mandatory) the heading of the notification
+                            title: 'Error!',
+                            // (string | mandatory) the text inside the notification
+                            text: 'Please select Category.',
+                            class_name: 'gritter-success  gritter-light'
+                            }); 
+                            $("#category_id").val('');      
+                            $("#dis_channel_id").focus();       
+                            }
+                            else
+                                {  */
+                                    var json = {};
+                                    json['category_id'] = $("#category_id").val();
+                                    json['dis_channel_id'] = $("#dis_channel_id").val();
+                                    json['noc'] = $("#noc").val();
+                                    var request = $.ajax({
+                                        url: "https://subscription.maktabatulmadinah.com/Form/get_category_channel_list",
+                                        type: "POST",
+                                        data: json,
+                                        dataType: "json",
+
+                                        success : function(_return)
+                                        {
+                                            if(_return['total'] == 1)
+                                            {
+                                                $.gritter.add({
+                                            // (string | mandatory) the heading of the notification
+                                            title: 'Price Not Exists!',
+                                            // (string | mandatory) the text inside the notification
+                                            text: 'Price Not Exists.',
+                                            class_name: 'gritter-success  gritter-light'
+                                        });
+                                                $(".price_list").addClass('hide');
+                                                $(".total_price").addClass('hide');
+                                        //$("#dis_channel_id").val('');
+                                       // $("#dis_channel_id").focus();
+                                   }
+                                   else
+                                   {
+                                    $(".price_list").removeClass('hide');
+                                        //console.log(_return);
+                                        $('#price').val(_return['price']); 
+
+                                        $(".total_price").removeClass('hide');
+                                        //console.log(_return);
+                                        $('#total_price').val(_return['total_price']); 
+
+                                    }
+
+                                }
+                            });  
+                                } 
+
+                            });
+
+
+            //Show and Hide Slip Input Box
+            // $('input[type="checkbox"]').click(function() 
+            // {
+            //  if($("#payment_receiving").prop('checked') == true)
+            //  {
+            //      $('.total_slip').removeClass('hide');   
+            //      $('#slip_no').val('');
+            //  }
+            //  else if($("#payment_receiving").prop('checked') == false)
+            //  {
+            //      $('.total_slip').addClass('hide');
+            //      $('#slip_no').val('');
+            //  }
+            // });
+
+
+            //Form Validation Customer
+            $('.form-validate-customer').validate({
+
+                errorElement: 'div',
+                errorClass: 'help-block',
+                focusInvalid: false,
+                rules: {
+                    username: {
+                        required: true
+                    },
+
+                    password: {
+                        required: true,
+                        minlength: 5
+                    },
+                    mobile_no: {
+                        required: true,
+                        // number: true
+                    }, 
+                    retypepassword: {
+                        required: true,
+                        minlength: 5,
+                        equalTo: "#password"
+                    },
+
+                },
+
+                messages: {
+
+                    password: {
+                        required: " Please specify a password.",
+                        minlength: "    Please specify a secure password."
+                    },
+                    subscription: " Please choose at least one option",
+                    gender: "   Please choose gender",
+                    agree: "    Please accept our policy"
+                },
+                invalidHandler: function (event, validator) { //display error alert on form submit
+                    $('.alert-danger', $('.form-validate')).show();
+                },
+
+                highlight: function (e) {
+                    $(e).closest('.form-group').removeClass('has-info').addClass('has-error');
+                },
+
+                success: function (e) {
+                    $(e).closest('.form-group').removeClass('has-error').addClass('has-info');
+                    $(e).remove();
+                },
+                errorPlacement: function (error, element) {
+                    error.insertAfter(element.parent());
+                },
+                submitHandler: function(form) {
+                    $("#btn-customer-submit").attr("disabled", true);
+                    form.submit(); 
+                }
+            });
+
+
+
+            //Form Validation Inventory
+            $('.form-validate-inventory').validate(
+            {
+
+                errorElement: 'div',
+                errorClass: 'help-block',
+                focusInvalid: false,
+                rules: 
+                {
+                        //Personal Info
+                        product_id: {   required: true  },
+                        qty: {    required: true , number: true, 
+                            /*min : 5 , max: 10 */
+                        },
+                        location_id: {  required: true  },
+
+                    },
+
+                    messages: {
+                        //name_fname: " Please enter name father name",
+                        date_dob: " Please select date of birth",
+                        date_ce: " Please select ce date",
+                        date_start: " Please select start date"
+
+                    },
+                    invalidHandler: function (event, validator) { //display error alert on form submit
+                        $('.alert-danger', $('.add_new_ajeer')).show();
+                    },
+
+                    highlight: function (e) {
+                        $(e).closest('.form-group').removeClass('has-info').addClass('has-error');
+                    },
+
+                    success: function (e) {
+                        $(e).closest('.form-group').removeClass('has-error').addClass('has-info');
+                        $(e).remove();
+                    },
+                    errorPlacement: function (error, element) {
+                        error.insertAfter(element.parent());
+                    }, 
+
+                }); 
+
+
+            //Form Validation Recent SMS
+            $('.form-validate-recent-sms').validate(
+            {
+
+                errorElement: 'div',
+                errorClass: 'help-block',
+                focusInvalid: false,
+                rules: 
+                {
+                        //Personal Info
+                        sms_type: { required: true  },
+
+                    },
+
+                    messages: {
+                        //name_fname: " Please enter name father name",
+                       // date_dob: " Please select date of birth",
+                       // date_ce: " Please select ce date",
+                       // date_start: " Please select start date"
+
+                   },
+                    invalidHandler: function (event, validator) { //display error alert on form submit
+                        $('.alert-danger', $('.add_new_ajeer')).show();
+                    },
+
+                    highlight: function (e) {
+                        $(e).closest('.form-group').removeClass('has-info').addClass('has-error');
+                    },
+
+                    success: function (e) {
+                        $(e).closest('.form-group').removeClass('has-error').addClass('has-info');
+                        $(e).remove();
+                    },
+                    errorPlacement: function (error, element) {
+                        error.insertAfter(element.parent());
+                    }, 
+
+                }); 
+
+
+            
+            //Form Validation Mailing List
+            $('.form-validate-mailing').validate(
+            {
+
+                errorElement: 'div',
+                errorClass: 'help-block',
+                focusInvalid: false,
+                rules: 
+                {
+                        //Personal Info
+                        trans_code: {   required: true  },
+
+                    },
+
+                    messages: {
+                        //name_fname: " Please enter name father name",
+                       // date_dob: " Please select date of birth",
+                       // date_ce: " Please select ce date",
+                       // date_start: " Please select start date"
+
+                   },
+                    invalidHandler: function (event, validator) { //display error alert on form submit
+                        $('.alert-danger', $('.add_new_ajeer')).show();
+                    },
+
+                    highlight: function (e) {
+                        $(e).closest('.form-group').removeClass('has-info').addClass('has-error');
+                    },
+
+                    success: function (e) {
+                        $(e).closest('.form-group').removeClass('has-error').addClass('has-info');
+                        $(e).remove();
+                    },
+                    errorPlacement: function (error, element) {
+                        error.insertAfter(element.parent());
+                    }, 
+
+                }); 
+
+
+            //Form Validation Dispatch List
+            $('.form-validate-dispatch').validate(
+            {
+
+                errorElement: 'div',
+                errorClass: 'help-block',
+                focusInvalid: false,
+                rules: 
+                {
+                        //Personal Info
+                        trans_code: {   required: true  },
+
+                    },
+
+                    messages: {
+                        //name_fname: " Please enter name father name",
+                       // date_dob: " Please select date of birth",
+                       // date_ce: " Please select ce date",
+                       // date_start: " Please select start date"
+
+                   },
+                    invalidHandler: function (event, validator) { //display error alert on form submit
+                        $('.alert-danger', $('.add_new_ajeer')).show();
+                    },
+
+                    highlight: function (e) {
+                        $(e).closest('.form-group').removeClass('has-info').addClass('has-error');
+                    },
+
+                    success: function (e) {
+                        $(e).closest('.form-group').removeClass('has-error').addClass('has-info');
+                        $(e).remove();
+                    },
+                    errorPlacement: function (error, element) {
+                        error.insertAfter(element.parent());
+                    }, 
+
+                }); 
+
+
+            //Form Validation Export SMS
+            $('.form-validate-export').validate(
+            {
+
+                errorElement: 'div',
+                errorClass: 'help-block',
+                focusInvalid: false,
+                rules: 
+                {
+                        //Personal Info
+                        trans_code: {   required: true  },
+
+                    },
+
+                    messages: {
+                        //name_fname: " Please enter name father name",
+                       // date_dob: " Please select date of birth",
+                       // date_ce: " Please select ce date",
+                       // date_start: " Please select start date"
+
+                   },
+                    invalidHandler: function (event, validator) { //display error alert on form submit
+                        $('.alert-danger', $('.add_new_ajeer')).show();
+                    },
+
+                    highlight: function (e) {
+                        $(e).closest('.form-group').removeClass('has-info').addClass('has-error');
+                    },
+
+                    success: function (e) {
+                        $(e).closest('.form-group').removeClass('has-error').addClass('has-info');
+                        $(e).remove();
+                    },
+                    errorPlacement: function (error, element) {
+                        error.insertAfter(element.parent());
+                    }, 
+
+                }); 
+
+
+            //Form Validation Import SMS
+            $('.form-validate-import').validate(
+            {
+
+                errorElement: 'div',
+                errorClass: 'help-block',
+                focusInvalid: false,
+                rules: 
+                {
+                        //Personal Info
+                        trans_code: {   required: true  },
+                        import_file:
+                        {   required: true,
+                            extension: "xls|xlsx"
+                        },
+                    },
+
+                    messages: {
+                        import_file:
+                        {
+                            required:"Please select excel file",
+                            extension: "Please select only excel file"
+                        }
+                       // date_dob: " Please select date of birth",
+                       // date_ce: " Please select ce date",
+                       // date_start: " Please select start date"
+
+                   },
+                    invalidHandler: function (event, validator) { //display error alert on form submit
+                        $('.alert-danger', $('.add_new_ajeer')).show();
+                    },
+
+                    highlight: function (e) {
+                        $(e).closest('.form-group').removeClass('has-info').addClass('has-error');
+                    },
+
+                    success: function (e) {
+                        $(e).closest('.form-group').removeClass('has-error').addClass('has-info');
+                        $(e).remove();
+                    },
+                    errorPlacement: function (error, element) {
+                        error.insertAfter(element.parent());
+                    }, 
+
+                }); 
+
+
+            
+            //Customer Search Button Click
+            $('.search_payment_customer').click(function()
+            {
+                var search_payment_input     = $('#search_payment_input').val();  
+                var json             = {};
+                if($('#search_payment_input').val() == "")
+                {
+                    $('#search_payment_input').focus(); 
+                }
+                else
+                {
+                    json['search_payment_input']   = search_payment_input;
+                    var request = $.ajax(
+                    {
+                        url: "https://subscription.maktabatulmadinah.com/Form/payment_receiving_search",
+                        type: "POST",
+                        data: json,
+                        dataType: "html",
+                        beforeSend : function()
+                        {
+                            $('.icon-spinner').removeClass('hide');   
+                        },
+                        success : function(_return)
+                        {
+                                    //console.log(_return);
+                                    $('.payment_result').html(_return); 
+                                },
+                                complete: function ()
+                                {
+                                    $('.icon-spinner').addClass('hide');      
+                                }
+                            }); 
+                }                         
+            });
+            
+            
+            //Recent SMS Search Button Click
+            $('.search_recent_sms_customer').click(function()
+            {
+                var search_sms_input     = $('#search_sms_input').val();  
+                var json             = {};
+                if($('#search_sms_input').val() == "")
+                {
+                    $('#search_sms_input').focus(); 
+                }
+                else
+                {
+                    json['search_sms_input']   = search_sms_input;
+                    var request = $.ajax(
+                    {
+                        url: "https://subscription.maktabatulmadinah.com/Form/recent_sms_search",
+                        type: "POST",
+                        data: json,
+                        dataType: "html",
+                        beforeSend : function()
+                        {
+                            $('.icon-spinner').removeClass('hide');   
+                        },
+                        success : function(_return)
+                        {
+                                    //console.log(_return);
+                                    $('.sms_result').html(_return); 
+                                },
+                                complete: function ()
+                                {
+                                    $('.icon-spinner').addClass('hide');      
+                                }
+                            }); 
+                }                         
+            });
+            
+            
+
+
+            //Payment Search Input
+            $('#search_payment_input').keypress(function(event)
+            {
+                if(event.keyCode == 13)
+                {
+                    $('.search_payment_customer').click();
+                    event.preventDefault();
+                    return false;
+                }
+            }); 
+
+            //Recent SMS Search Input
+            $('#search_sms_input').keypress(function(event)
+            {
+                if(event.keyCode == 13)
+                {
+                    $('.search_recent_sms_customer').click();
+                    event.preventDefault();
+                    return false;
+                }
+            }); 
+
+            
+//          setTimeout(function(){
+//                $('.alert-success').remove();
+//                }, 2000);  
+//            setTimeout(function(){
+//                $('.alert-danger').remove();
+//                }, 2000);
+
+
+$('.form-validate').validate({
+
+    errorElement: 'div',
+    errorClass  : 'help-block',
+    focusInvalid: false,
+    rules: {},
+
+    messages: {
+        email: {
+            required    : " Please provide a valid email.",
+            email       : " Please provide a valid email."
+        },
+        password        : {
+            required    : " Please specify a password.",
+            minlength   : " Please specify a secure password."
+        },
+        subscription    : " Please choose at least one option",
+        gender          : " Please choose gender",
+        agree           : " Please accept our policy"
+    },
+                invalidHandler: function (event, validator) { //display error alert on form submit
+                    $('.alert-danger', $('.form-validate')).show();
+                },
+
+                highlight: function (e) {
+                    $(e).closest('.form-group').removeClass('has-info').addClass('has-error');
+                },
+
+                success: function (e) {
+                    $(e).closest('.form-group').removeClass('has-error').addClass('has-info');
+                    $(e).remove();
+                },
+                errorPlacement: function (error, element) {
+                    error.insertAfter(element.parent());
+                },
+
+            });      
+$('.form-validate-distribution').validate({
+
+    errorElement: 'div',
+    errorClass  : 'help-block',
+    focusInvalid: false,
+    rules: {},
+
+    messages: {
+        email: {
+            required    : " Please provide a valid email.",
+            email       : " Please provide a valid email."
+        },
+        password        : {
+            required    : " Please specify a password.",
+            minlength   : " Please specify a secure password."
+        },
+        subscription    : " Please choose at least one option",
+        gender          : " Please choose gender",
+        agree           : " Please accept our policy"
+    },
+                invalidHandler: function (event, validator) { //display error alert on form submit
+                    $('.alert-danger', $('.form-validate')).show();
+                },
+
+                highlight: function (e) {
+                    $(e).closest('.form-group').removeClass('has-info').addClass('has-error');
+                },
+
+                success: function (e) {
+                    $(e).closest('.form-group').removeClass('has-error').addClass('has-info');
+                    $(e).remove();
+                },
+                errorPlacement: function (error, element) {
+                    error.insertAfter(element.parent());
+                },
+
+            });
+
+$(".form-validate-distribution").on('submit', function(e){
+
+
+    var balance_qty = $("#balance_qty").val();
+    var remaing_qty = parseInt($("#remaning_qty").val());
+    var selected_qty = parseInt($("#selected_qty").val());
+                //                       alert(balance_qty);
+                if(selected_qty > balance_qty)
+                {  
+                    e.preventDefault();
+                    $.gritter.add({
+                        // (string | mandatory) the heading of the notification
+                        title: 'Balance Required!',
+                        // (string | mandatory) the text inside the notification
+                        text: 'Balance Required for Transaction',
+                        class_name: 'gritter-danger  gritter-light'
+                    });   
+                }
+
+
+            });
+
+$('.required-field').each(function(){
+    $(this).rules('add', {
+
+        required: true,
+        messages:   {
+            required: $(this).attr('placeholder')+' field is requird !'
+        }
+
+    });
+});
+
+            //Check Cnic Exit
+            //Check cnic exit
+            $('.check_cnic_exists').blur(function()
+            {
+                var search_input     = $(this).val();
+                var search_length    = search_input.length;   
+                var json             = {};
+                if(search_length != 13 )
+                {
+                    $(this).val('');
+                        //$(this).focus();
+                        $.gritter.add({
+                            // (string | mandatory) the heading of the notification
+                            title: 'Invalid CNIC Format!',
+                            // (string | mandatory) the text inside the notification
+                            text: search_input+' this CNIC Format is not valid ',
+                            class_name: 'gritter-danger  gritter-light'
+                        });   
+                    }
+                    else
+                    {   
+                        json['search_input']   = search_input;
+                        json['searchType'] = 2;
+                        var request = $.ajax({
+                            url: "https://subscription.maktabatulmadinah.com/Ajeer/search_ajeer",
+                            type: "POST",
+                            data: json,
+                            dataType: "json",
+                            beforeSend : function()
+                            {
+                                $('.icon-spinner').removeClass('hide');   
+                            }
+                            ,
+                            success : function(_return)
+                            {
+                                var details = _return['person_information'];     
+                                if(details.cnic == search_input)
+                                {
+                                    $.gritter.add({
+                                        // (string | mandatory) the heading of the notification
+                                        title: 'Alreay Exists!',
+                                        // (string | mandatory) the text inside the notification
+                                        text: details.cnic+' this CNIC Already Exists with Cardno '+details.id,
+                                        class_name: 'gritter-danger  gritter-light'
+                                    });
+                                    $('.cnic').val(''); 
+
+
+                                }else
+                                {
+
+                                }
+
+                            },
+                            complete: function ()
+                            {
+                                $('.icon-spinner').addClass('hide');      
+                            }
+                        });
+                    }  
+                });       
+
+            function change_country_list(country_id,state_id)
+            {
+                var json             = {};
+
+                json['country_id']   = country_id;
+
+                //json['country_id']   = country_id;
+
+                var request = $.ajax({
+                    url: "https://subscription.maktabatulmadinah.com/Ajeer/state_list_by_countryid",
+                    type: "POST",
+                    data: json,
+                    dataType: "html",
+                    beforeSend : function()
+                    {
+                        $('.icon-spinner').removeClass('hide');
+                    }
+                    ,
+                    success : function(_return)
+                    {
+                        // console.log(_return);
+                        $('.state_id').html(_return);
+                        $('#state_id').val(state_id);
+                        //$('#country_id').val(details.country_id);
+                        //$("#state_id").trigger("chosen:updated");
+
+
+                    },
+                    complete: function ()
+                    {
+                        $('.icon-spinner').addClass('hide');
+                    }
+                });
+            }
+
+            function change_state_list(country_id,state_id,city_id)
+            {
+                var json             = {};
+                //console.log($('#country_id').val());
+                //console.log($('#city_hidden').val());
+
+                json['country_id']   = country_id;
+
+                json['state_id']   = state_id;
+
+                var request = $.ajax({
+                    url: "https://subscription.maktabatulmadinah.com/Ajeer/city_list_by_countryid",
+                    type: "POST",
+                    data: json,
+                    dataType: "html",
+                    beforeSend : function()
+                    {
+                        $('.icon-spinner').removeClass('hide');
+                    }
+                    ,
+                    success : function(_return)
+                    {
+                        //console.log($('#country_id').val());
+                        //console.log($('#city_id').val());
+                        //console.log(_return);
+                        $('.city_id').html(_return);
+                        $('#city_id').val(city_id);
+                        //$("#city_id").trigger("chosen:updated");
+                        //$('#district_id').html(_return);
+                        // $('#district_id').val(district_list);
+
+                    },
+                    complete: function ()
+                    {
+                        $('.icon-spinner').addClass('hide');
+                    }
+                });
+            }
+
+
+            function change_kabina_list(kabinat_id,kabina_list)
+            {
+                var json             = {};
+
+                json['kabinat_id']   = kabinat_id;
+
+                //json['country_id']   = country_id;
+
+                var request = $.ajax({
+                    url: "https://subscription.maktabatulmadinah.com/Ajeer/kabina_list_by_kabinatid",
+                    type: "POST",
+                    data: json,
+                    dataType: "html",
+                    beforeSend : function()
+                    {
+                        $('.icon-spinner').removeClass('hide');
+                    }
+                    ,
+                    success : function(_return)
+                    {
+                        //console.log(_return);
+                        $('.kabina_id').html(_return);
+                        $('#kabina_id').val(kabina_list);
+                        //$('#country_id').val(details.country_id);
+                        // $("#kabina_id").trigger("chosen:updated");
+
+
+                    },
+                    complete: function ()
+                    {
+                        $('.icon-spinner').addClass('hide');
+                    }
+                });
+            }
+
+
+        });         
+    </script>
+
+
+
+</body></html>
